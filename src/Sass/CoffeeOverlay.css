@@ -1,0 +1,62 @@
+.coffee-overlay {
+  width: 100%;
+}
+
+.coffee-overlay .coffee-overlay-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.coffee-overlay .coffee-overlay-flex .coffee-bg {
+  width: 100%;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.coffee-overlay .coffee-overlay-flex .coffee-bg .coffee-overlay-gradient {
+  width: 100%;
+  min-height: 85vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  z-index: 1;
+}
+
+.coffee-overlay .coffee-overlay-flex .coffee-overlay-content {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+}
+
+.coffee-overlay .coffee-overlay-flex .coffee-overlay-content h2 {
+  font-size: 48px;
+  color: white;
+}
+
+.coffee-overlay .coffee-overlay-flex .coffee-overlay-content p {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
+
+.coffee-overlay .coffee-overlay-flex .coffee-overlay-content .hero-button {
+  color: white;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=CoffeeOverlay.css.map */

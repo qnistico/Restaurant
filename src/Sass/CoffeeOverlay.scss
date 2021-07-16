@@ -1,0 +1,43 @@
+.coffee-overlay {
+    width: 100%;
+    .coffee-overlay-flex {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .coffee-bg {
+            width: 100%;
+            position: relative;
+            object-fit: cover;
+            .coffee-overlay-gradient {
+                width: 100%;
+                min-height: 85vh;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                position: absolute;
+                z-index: 1;
+            }
+        }
+        .coffee-overlay-content {
+            z-index: 2;
+            position: absolute;
+            text-align: center;
+            h2 {
+                font-size: 48px;
+                color: white;
+            }
+            p {
+                max-width: 1000px;
+                margin: auto;
+                font-size: 24px;
+                font-weight: 600;
+                color: white;
+                margin-top: 20px;
+            }
+            .hero-button {
+                color: white;
+                margin-top: 40px;
+            }
+    }
+    }
+}

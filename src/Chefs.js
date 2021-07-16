@@ -4,6 +4,8 @@ import chef1nobg from "./img/chef1nobg.png";
 import chef3nobg from "./img/chef3nobg.png";
 import chef1 from "./img/chef1.jpg";
 import chef3 from "./img/chef3.jpg";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 function Chefs() {
   return (
@@ -29,7 +31,13 @@ function Chefs() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Tempus quam pellentesque nec nam.{" "}
               </p>
+              <div className="chef-item-bottom">
               <button className="hero-button">View Profile</button>
+              <div>
+              <FacebookIcon />
+              <TwitterIcon />
+              </div>
+            </div>
             </div>
           </div>
           <div className="chef-item">
@@ -41,7 +49,13 @@ function Chefs() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Tempus quam pellentesque nec nam.{" "}
               </p>
+              <div className="chef-item-bottom">
               <button className="hero-button">View Profile</button>
+              <div>
+              <FacebookIcon />
+              <TwitterIcon />
+              </div>
+            </div>
             </div>
           </div>
         </div>
