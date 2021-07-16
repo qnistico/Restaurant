@@ -20,7 +20,7 @@ function About(props) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin tempor id eu nisl nunc mi ipsum. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin tempor id eu nisl nunc mi ipsum.</p>
+          <p>Duis at consectetur lorem donec massa sapien faucibus et. Sagittis vitae et leo duis ut. Ante metus dictum at tempor.</p>
           <img src={aboutimg1} alt="" />
         </div>
         <div className="about-right">

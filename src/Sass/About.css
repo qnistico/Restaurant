@@ -7,13 +7,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: auto;
 }
 
 .about .about-flex .about-left {
-  width: 100%;
+  width: 68%;
   line-height: 1.618;
+  padding: 30px;
 }
 
 .about .about-flex .about-left .about-header {
@@ -28,23 +29,20 @@
   font-size: 40px;
   font-family: 'Jost', sans-serif;
   margin-bottom: 20px;
-  width: 85%;
-  line-height: 1.4;
 }
 
 .about .about-flex .about-left p {
   margin-bottom: 40px;
-  width: 85%;
 }
 
 .about .about-flex .about-left img {
-  width: 85%;
+  width: 100%;
   -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
           box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
 }
 
 .about .about-right {
-  width: 40%;
+  width: 34%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,6 +50,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  padding: 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -67,6 +66,5 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 75%;
 }
 /*# sourceMappingURL=About.css.map */

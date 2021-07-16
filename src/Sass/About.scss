@@ -3,11 +3,12 @@
     padding: 60px 30px;
     .about-flex {
         display: flex;
-        max-width: 1280px;
+        max-width: 1400px;
         margin: auto;
         .about-left {
-             width: 100%;
+             width: 68%;
              line-height: 1.618;
+             padding: 30px;
         .about-header {
             font-size: 32px;
             font-family: 'Allura', sans-serif;
@@ -19,24 +20,22 @@
             font-size: 40px;
             font-family: 'Jost', sans-serif;
             margin-bottom: 20px;
-            width: 85%;
-            line-height: 1.4;
         }
         p {
             margin-bottom: 40px;
-            width: 85%;
         }
             img {
-                width: 85%;
-                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.220);
+                width: 100%;
+                    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.220);
             }
         
     }
     }
     .about-right {
-        width: 40%;
+        width: 34%;
         display: flex;
         flex-flow: column;
+        padding: 30px;
         justify-content: flex-start;
         h2 {
             margin-bottom: 20px;
@@ -46,7 +45,6 @@
         img {
             width: 100%;
             object-fit: cover;
-            max-height: 75%;
         }
     }
 }

@@ -16,4 +16,19 @@ h2 {
   font-family: 'Jost', sans-serif;
   font-weight: 700;
 }
+
+p {
+  line-height: 1.618;
+}
+
+.hero-button {
+  background-color: #261e1c;
+  color: #e0bc75;
+  padding: 12px 20px;
+  border: none;
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 16px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=App.css.map */
