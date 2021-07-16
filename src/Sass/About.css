@@ -1,0 +1,72 @@
+.about {
+  width: 100%;
+  padding: 60px 30px;
+}
+
+.about .about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.about .about-flex .about-left {
+  width: 100%;
+  line-height: 1.618;
+}
+
+.about .about-flex .about-left .about-header {
+  font-size: 32px;
+  font-family: 'Allura', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #a08b52;
+}
+
+.about .about-flex .about-left h2 {
+  font-size: 40px;
+  font-family: 'Jost', sans-serif;
+  margin-bottom: 20px;
+  width: 85%;
+  line-height: 1.4;
+}
+
+.about .about-flex .about-left p {
+  margin-bottom: 40px;
+  width: 85%;
+}
+
+.about .about-flex .about-left img {
+  width: 85%;
+  -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.about .about-right {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about .about-right h2 {
+  margin-bottom: 20px;
+  color: #a08b52;
+  font-family: 'Allura', sans-serif;
+}
+
+.about .about-right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 75%;
+}
+/*# sourceMappingURL=About.css.map */

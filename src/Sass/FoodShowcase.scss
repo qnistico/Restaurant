@@ -1,0 +1,23 @@
+.food-showcase {
+    width: 100%;
+    background-color: #f1f2f5;
+    padding: 40px 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .food-showcase-flex {
+        display: flex;
+        img {
+            width: 50%;
+            object-fit: cover;
+        }
+        .food-showcase-content {
+            width: 100%;
+            padding: 30px;
+        }
+    }
+    .food-showcase-flex-reverse {
+        flex-flow: row-reverse;
+    }
+}

@@ -1,0 +1,70 @@
+.single-card {
+  width: 100%;
+  .single-card-body {
+    width: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.158);
+    margin-bottom: 30px;
+    .single-card-img {
+      overflow: hidden;
+    }
+    .single-card-img img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .single-card-content {
+      padding: 20px;
+      line-height: 1.618;
+      .single-card-title {
+        font-size: 22px;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .single-card-title::after {
+          content: '';
+          width: 62px;
+          height: 2px;
+        border-bottom: 3px solid #e0bc75;
+        display: block;
+
+      }
+      .single-card-description {
+        color: #4d4d4d;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      .single-card-ingredients,
+      .single-card-allergies {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #4d4d4d;
+      }
+      .single-card-ingredients span,
+      .single-card-allergies span {
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+      }
+      .single-card-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .single-card-price {
+        font-size: 19px;
+        font-weight: 700;
+      }
+      .single-card-button {
+        background-color: #261e1c;
+        color: #e0bc75;
+        padding: 12px 20px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
