@@ -2,19 +2,30 @@ import React, { useState } from "react";
 import "./Sass/LPMenu.scss";
 import coffee1 from "./img/coffee.jpg";
 import pasta1 from "./img/pasta.jpg";
+import pasta2 from "./img/pasta2.jpg";
+import pasta3 from "./img/pasta3.jpg";
+import pasta4 from "./img/pasta4.jpg";
 import pizza1 from "./img/margaritapizza.jpg";
+import pizza2 from "./img/pizza2.jpg";
+import pizza3 from "./img/pizza3.jpg";
+import pizza4 from "./img/pizza4.jpg";
 import wine1 from "./img/wine1.jpg";
 import fish1 from "./img/fish1.jpg";
+import fish2 from "./img/fish2.jpg";
+import fish3 from "./img/fish3.jpg";
+import fish4 from "./img/fish4.jpg";
 import { useHistory } from "react-router-dom";
 
 function LPMenu(props) {
   window.onload = function() {
     sortPasta();
   };
+  /*
   function activeButton() {
     var active = document.querySelectorAll(".filter-button");
-    active.forEach((el) => el.classList.add(".active"));
+    active.forEach((el) => el.classList.add("active"));
   }
+  */
   function sortPasta() {
     var hideOthers1 = document.querySelectorAll(
       "div.fishitem, div.pizzaitem, div.wineitem, div.coffeeitem"
@@ -72,7 +83,6 @@ function LPMenu(props) {
         <button
           onClick={() => {
             sortPasta();
-            activeButton();
           }}
           className="filter-button pasta"
         >
@@ -81,7 +91,6 @@ function LPMenu(props) {
         <button
           onClick={() => {
             sortFish();
-            activeButton();
           }}
           className="filter-button fish"
         >
@@ -90,7 +99,6 @@ function LPMenu(props) {
         <button
           onClick={() => {
             sortPizza();
-            activeButton();
           }}
           className="filter-button pizza"
         >
@@ -99,7 +107,6 @@ function LPMenu(props) {
         <button
           onClick={() => {
             sortWine();
-            activeButton();
           }}
           className="filter-button wine"
         >
@@ -108,7 +115,6 @@ function LPMenu(props) {
         <button
           onClick={() => {
             sortCoffee();
-            activeButton();
           }}
           className="filter-button coffee"
         >
@@ -138,7 +144,7 @@ function LPMenu(props) {
           <div className="pastaitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={pasta1} alt="pasta" />
+                <img src={pasta2} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -156,7 +162,7 @@ function LPMenu(props) {
           <div className="pastaitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={pasta1} alt="pasta" />
+                <img src={pasta3} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -174,7 +180,7 @@ function LPMenu(props) {
           <div className="pastaitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={pasta1} alt="pasta" />
+                <img src={pasta4} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -211,7 +217,7 @@ function LPMenu(props) {
           <div className="fishitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={fish1} alt="pasta" />
+                <img src={fish2} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -229,7 +235,7 @@ function LPMenu(props) {
           <div className="fishitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={fish1} alt="pasta" />
+                <img src={fish3} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -247,7 +253,7 @@ function LPMenu(props) {
           <div className="fishitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={fish1} alt="pasta" />
+                <img src={fish4} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -284,7 +290,7 @@ function LPMenu(props) {
           <div className="pizzaitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={pizza1} alt="pasta" />
+                <img src={pizza2} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -302,7 +308,7 @@ function LPMenu(props) {
           <div className="pizzaitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={pizza1} alt="pasta" />
+                <img src={pizza3} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
@@ -320,7 +326,7 @@ function LPMenu(props) {
           <div className="pizzaitem">
             <div className="menu-item-img">
               <a href="#!">
-                <img src={pizza1} alt="pasta" />
+                <img src={pizza4} alt="pasta" />
               </a>
             </div>
             <div className="menu-item-content">
