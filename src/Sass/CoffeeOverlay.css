@@ -19,22 +19,6 @@
   margin: auto;
 }
 
-.coffee-overlay .coffee-overlay-flex .coffee-bg {
-  width: 100%;
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.coffee-overlay .coffee-overlay-flex .coffee-bg .coffee-overlay-gradient {
-  width: 100%;
-  min-height: 85vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  position: absolute;
-  z-index: 1;
-}
-
 .coffee-overlay .coffee-overlay-flex .coffee-overlay-content {
   z-index: 2;
   position: absolute;
@@ -42,7 +26,7 @@
 }
 
 .coffee-overlay .coffee-overlay-flex .coffee-overlay-content h2 {
-  font-size: 48px;
+  font-size: 64px;
   color: white;
 }
 
@@ -58,5 +42,13 @@
 .coffee-overlay .coffee-overlay-flex .coffee-overlay-content .hero-button {
   color: white;
   margin-top: 40px;
+  border: 1px solid #ad985f;
+}
+
+.coffee-overlay .parallaxclass {
+  width: 100%;
+  position: absolute;
+  -webkit-filter: brightness(55%);
+          filter: brightness(55%);
 }
 /*# sourceMappingURL=CoffeeOverlay.css.map */

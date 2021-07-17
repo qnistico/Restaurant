@@ -13,13 +13,13 @@ function Hero(props) {
       <div>
 
     <div className="hero">
-    <div className="hero-gradient"></div>
 
       <div className="hero-content">
           <h1>Authentic Italian Cuisine</h1>
           <p>We makea da good good italiano ravioliiiiiiiiiiiiiiii</p>
           <button  className="hero-button">View Menu</button>
       </div>
+      
       <ParallaxProvider>
         <Parallax imgsrc={herobg} height="100vh" />
       </ParallaxProvider>

@@ -34,7 +34,7 @@
 
 .hero .hero-content h1 {
   font-size: 64px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: white;
 }
 
@@ -44,14 +44,14 @@
   color: white;
 }
 
-.hero .hero-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.hero .hero-content .hero-button {
+  margin-top: 30px;
+}
+
+.hero .parallaxclass {
   width: 100%;
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  -webkit-filter: brightness(55%);
+          filter: brightness(55%);
 }
 /*# sourceMappingURL=Hero.css.map */
