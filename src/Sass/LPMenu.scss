@@ -9,7 +9,7 @@
       max-width: 1400px;
       margin: auto;
   }
-  .menu-lists button {
+  .menu-lists {
     display: flex;
     margin-bottom: 60px;
     text-align: center;
@@ -28,6 +28,7 @@
     transition: all 0.3s ease;
     
   }
+
   .menu-items {
       display: flex;
       flex-flow: row wrap;
@@ -37,7 +38,6 @@
       .menu-item {
           width: 50%;
           display: flex;
-          padding: 0 30px 30px 0;
           margin: auto;
           justify-content: flex-start;
           .menu-item-img {
@@ -69,10 +69,19 @@
   }
   .pastaitem, .fishitem, .pizzaitem, .wineitem, .coffeeitem {
       transition: all 0.3s ease;
+      display: flex;
+      padding: 0 30px 30px 0;
+
   }
   .active {
       background-color: #e0bc75 !important;
       color: #111 !important;
       border-color: #111 !important;
+  }
+  .show {
+      display: flex;
+  }
+  .hide {
+      display: none;
   }
 }

@@ -15,7 +15,7 @@
   margin: auto;
 }
 
-.lp-menu .menu-lists button {
+.lp-menu .menu-lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 30px 30px 0;
   margin: auto;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -101,11 +100,25 @@
 .lp-menu .pastaitem, .lp-menu .fishitem, .lp-menu .pizzaitem, .lp-menu .wineitem, .lp-menu .coffeeitem {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 30px 30px 0;
 }
 
 .lp-menu .active {
   background-color: #e0bc75 !important;
   color: #111 !important;
   border-color: #111 !important;
+}
+
+.lp-menu .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lp-menu .hide {
+  display: none;
 }
 /*# sourceMappingURL=LPMenu.css.map */
