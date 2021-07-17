@@ -8,7 +8,7 @@ import fish1 from "./img/fish1.jpg";
 import { useHistory } from "react-router-dom";
 
 function LPMenu(props) {
-  var tabs = document.querySelectorAll(".menu-lists ul li");
+  var tabs = document.querySelectorAll(".menu-lists button");
   var pasta = document.querySelectorAll(".pastaitem");
   var fish = document.querySelectorAll(".fishitem");
   var pizza = document.querySelectorAll(".pizzaitem");
@@ -56,15 +56,13 @@ function LPMenu(props) {
   return (
     <div className="lp-menu">
       <div className="menu-lists">
-        <ul>
-          <li data-tabs="pasta" className="active">
+          <button data-tabs="pasta" className="active">
             Pasta
-          </li>
-          <li data-tabs="fish">Fish</li>
-          <li data-tabs="pizza">Pizza</li>
-          <li data-tabs="wine">Wine</li>
-          <li data-tabs="coffee">Coffee</li>
-        </ul>
+          </button>
+          <button data-tabs="fish">Fish</button>
+          <button data-tabs="pizza">Pizza</button>
+          <button data-tabs="wine">Wine</button>
+          <button data-tabs="coffee">Coffee</button>
       </div>
       <div className="menu-items">
         <div className="menu-item pastaitem">
