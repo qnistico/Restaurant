@@ -4,6 +4,7 @@ import RestaurantIcon from '@material-ui/icons/Restaurant';
 import { useHistory } from "react-router-dom";
 import "./Sass/Nav.scss";
 import MenuIcon from '@material-ui/icons/Menu';
+import logo from "./img/logo.png";
 
 
 function Nav() {
@@ -34,9 +35,9 @@ function Nav() {
       <>
         <nav className="navbar" id="navbar">
           <div className="nav-container">
-            <NavLink exact to="/" className="nav-logo">
-            </NavLink>
-
+            <a href="/" className="nav-logo"> 
+              <img src={logo} alt="" />
+              </a>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <NavLink

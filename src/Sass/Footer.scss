@@ -1,0 +1,35 @@
+footer {
+  width: 100%;
+  padding: 60px 30px;
+  background-color: #261e1c;
+  .footer-flex {
+    display: flex;
+    max-width: 1400px;
+    justify-content: space-evenly;
+    margin: auto;
+    .footer-item {
+        padding: 0 20px;
+      color: #d1d1d1;
+      line-height: 1.618;
+      h4 {
+          font-size: 20px;
+          margin-bottom: 13px;
+      }
+      ul li {
+          list-style: none;
+      }
+      a {
+          text-decoration: none;
+          color: #d1d1d1;
+      }
+    }
+      .footer-about {
+          width: 35%;
+        img {
+          width: 266px;
+          margin-top: 20px;
+        }
+      
+    }
+  }
+}

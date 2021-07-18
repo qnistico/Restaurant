@@ -1,0 +1,55 @@
+.menu-item {
+  width: 100%;
+  padding: 60px 30px;
+}
+
+.menu-item .menu-item-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.menu-item .menu-item-flex .menu-item-content span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu-item .menu-item-flex .menu-item-content h1 {
+  font-size: 48px;
+}
+
+.menu-item .menu-item-flex .menu-item-content .food-description, .menu-item .menu-item-flex .menu-item-content .food-ingredients, .menu-item .menu-item-flex .menu-item-content .food-allergies, .menu-item .menu-item-flex .menu-item-content .food-price {
+  padding: 10px;
+  font-size: 17px;
+  color: #333;
+}
+
+.menu-item .menu-item-flex .menu-item-content .food-description {
+  background-color: #f1f2f5;
+}
+
+.menu-item .menu-item-flex .menu-item-content .food-allergies {
+  background-color: #f1f2f5;
+}
+
+.menu-item .menu-item-flex .menu-item-content .parallaxclass {
+  width: 62vw !important;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=MenuItemTemplate.css.map */

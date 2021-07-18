@@ -1,0 +1,40 @@
+.menu-item {
+    width: 100%;
+    padding: 60px 30px;
+    .menu-item-flex {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 100px;
+    margin: auto;
+    max-width: 1400px;
+    .menu-item-content {
+        span {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    h1 {
+        font-size: 48px;
+    }
+    .food-description, .food-ingredients, .food-allergies, .food-price {
+        padding: 10px;
+        font-size: 17px;
+        color: #333;
+    }
+    .food-description {
+background-color: #f1f2f5;
+    }
+    .food-allergies {
+        background-color: #f1f2f5;
+    }
+    .parallaxclass {
+        width: 62vw !important;
+        margin: auto;
+        object-fit: cover;
+    }
+}
+}
+}

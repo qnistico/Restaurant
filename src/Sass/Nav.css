@@ -38,13 +38,15 @@
 }
 
 .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  padding-left: 12px;
 }
 
 .nav-logo img {
@@ -121,7 +123,7 @@
 .fix_nav {
   position: fixed;
   background-color: #261e1c;
-  height: 55px;
+  height: 60px;
   width: 100%;
   -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.158);
   box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.158);
@@ -257,7 +259,7 @@
           transform: translateY(0);
 }
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 900px) {
   .fix_nav {
     height: 75px;
   }

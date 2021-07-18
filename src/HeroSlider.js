@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import herobg from "./img/herobg.jpg";
-import pasta from "./img/pasta.jpg";
+import pasta1 from "./img/pasta1.jpg";
 import "./Sass/HeroSlider.scss";
 import herobg5 from "./img/herobg5.jpg";
 

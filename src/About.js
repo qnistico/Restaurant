@@ -2,7 +2,7 @@ import React from "react";
 import "./Sass/About.scss";
 import aboutimg1 from "./img/aboutimg1.jpg";
 import margaritapizza from "./img/margaritapizza.jpg";
-import pasta from "./img/pasta.jpg";
+import pasta1 from "./img/pasta1.jpg";
 import herobg5 from "./img/herobg5.jpg";
 import SingleCard from "./SingleCard";
 
@@ -34,7 +34,7 @@ function About(props) {
             scprice="$14.00"
           />
           <SingleCard
-            scimg={pasta}
+            scimg={pasta1}
             sctitle="Margarita Pizza"
             scdescription="Margarita pizza freshly baked in our brick oven"
             scingredients="Wheat, olive oil, mozzarella cheese, tomatoes, tomato sauce and basil."

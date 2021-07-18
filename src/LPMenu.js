@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sass/LPMenu.scss";
 import coffee1 from "./img/coffee.jpg";
-import pasta1 from "./img/pasta.jpg";
+import pasta1 from "./img/pasta1.jpg";
 import pasta2 from "./img/pasta2.jpg";
 import pasta3 from "./img/pasta3.jpg";
 import pasta4 from "./img/pasta4.jpg";
@@ -15,6 +15,12 @@ import fish2 from "./img/fish2.jpg";
 import fish3 from "./img/fish3.jpg";
 import fish4 from "./img/fish4.jpg";
 import { useHistory } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function LPMenu(props) {
   window.onload = function() {
@@ -79,7 +85,11 @@ function LPMenu(props) {
   const history = useHistory();
   return (
     <div className="lp-menu">
+
       <div className="menu-lists">
+      <h2>Browse Our Menu</h2>
+
+        <div>
         <button
           onClick={() => {
             sortPasta();
@@ -120,369 +130,370 @@ function LPMenu(props) {
         >
           Coffee
         </button>
+        </div>
       </div>
-      <div className="menu-items">
-        <div className="menu-item">
+      <div className="lp-menu-items">
+        <div className="lp-menu-item">
           <div className="pastaitem">
-            <div className="menu-item-img">
-              <a href="#!">
+            <div className="lp-menu-item-img">
+              <a href="/PennePasta">
                 <img src={pasta1} alt="pasta" />
-              </a>
+                </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pastaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pasta2} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pastaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pasta3} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pastaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pasta4} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
         {/* fish */}
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="fishitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={fish1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="fishitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={fish2} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="fishitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={fish3} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="fishitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={fish4} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
         {/* pizza */}
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pizzaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pizza1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pizzaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pizza2} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pizzaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pizza3} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="pizzaitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={pizza4} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
         {/* wine */}
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="wineitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={wine1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="wineitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={wine1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="wineitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={wine1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="wineitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={wine1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
         {/* coffee */}
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="coffeeitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={coffee1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="coffeeitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={coffee1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="coffeeitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={coffee1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
-        <div className="menu-item">
+        <div className="lp-menu-item">
           <div className="coffeeitem">
-            <div className="menu-item-img">
+            <div className="lp-menu-item-img">
               <a href="#!">
                 <img src={coffee1} alt="pasta" />
               </a>
             </div>
-            <div className="menu-item-content">
-              <a href="#!" className="menu-item-title">
+            <div className="lp-menu-item-content">
+              <a href="#!" className="lp-menu-item-title">
                 Penne Pasta
               </a>
-              <p className="menu-item-ingredients">
+              <p className="lp-menu-item-ingredients">
                 Wheat pasta, mushrooms, cream, oregeno and butter
               </p>
-              <p className="menu-item-price">$23.00</p>
+              <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
         </div>
