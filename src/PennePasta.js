@@ -3,9 +3,7 @@ import MenuItemTemplate from "./MenuItemTemplate";
 import pasta1 from "./img/pasta1.jpg";
 
 function PennePasta(props) {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+    
   return (
     <div>
       <MenuItemTemplate

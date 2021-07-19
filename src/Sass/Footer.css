@@ -1,6 +1,5 @@
 footer {
   width: 100%;
-  padding: 60px 30px;
   background-color: #261e1c;
 }
 
@@ -13,12 +12,13 @@ footer .footer-flex {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: auto;
+  padding: 60px 0;
 }
 
 footer .footer-flex .footer-item {
   padding: 0 20px;
   color: #d1d1d1;
-  line-height: 1.618;
+  line-height: 2;
 }
 
 footer .footer-flex .footer-item h4 {
@@ -42,5 +42,21 @@ footer .footer-flex .footer-about {
 footer .footer-flex .footer-about img {
   width: 266px;
   margin-top: 20px;
+}
+
+footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  color: #d1d1d1;
+  background-color: #161211;
+}
+
+footer .footer-bottom .MuiSvgIcon-root {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=Footer.css.map */

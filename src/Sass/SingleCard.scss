@@ -64,6 +64,13 @@
         border: none;
         font-weight: 600;
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .single-card-button:hover,
+      .single-card-button:focus,
+      .single-card-button:active {
+        color: #261e1c;
+        background-color: #e0bc75;
       }
     }
   }

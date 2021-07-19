@@ -16,7 +16,7 @@ function Hero(props) {
 
       <div className="hero-content">
           <h1>Authentic Italian Cuisine</h1>
-          <p>We makea da good good italiano ravioliiiiiiiiiiiiiiii</p>
+          <p>Italian cuisine cooked to perfection</p>
           <button  className="hero-button">View Menu</button>
       </div>
       

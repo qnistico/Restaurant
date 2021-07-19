@@ -15,15 +15,10 @@ import fish2 from "./img/fish2.jpg";
 import fish3 from "./img/fish3.jpg";
 import fish4 from "./img/fish4.jpg";
 import { useHistory } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function LPMenu(props) {
-  window.onload = function() {
+  window.onload = function () {
     sortPasta();
   };
   /*
@@ -32,6 +27,14 @@ function LPMenu(props) {
     active.forEach((el) => el.classList.add("active"));
   }
   */
+
+  function sortAll() {
+    var showAll = document.querySelectorAll(
+      "div.pastaitem, div.pizzaitem, div.fishitem, div.wineitem, div.coffeeitem"
+    );
+    showAll.forEach((all) => all.classList.add("show"));
+    showAll.forEach((all) => all.classList.remove("hide"));
+  }
   function sortPasta() {
     var hideOthers1 = document.querySelectorAll(
       "div.fishitem, div.pizzaitem, div.wineitem, div.coffeeitem"
@@ -85,60 +88,68 @@ function LPMenu(props) {
   const history = useHistory();
   return (
     <div className="lp-menu">
-
       <div className="menu-lists">
-      <h2>Browse Our Menu</h2>
+        <h2>Browse Our Menu</h2>
 
         <div>
-        <button
-          onClick={() => {
-            sortPasta();
-          }}
-          className="filter-button pasta"
-        >
-          Pasta
-        </button>
-        <button
-          onClick={() => {
-            sortFish();
-          }}
-          className="filter-button fish"
-        >
-          Fish
-        </button>
-        <button
-          onClick={() => {
-            sortPizza();
-          }}
-          className="filter-button pizza"
-        >
-          Pizza
-        </button>
-        <button
-          onClick={() => {
-            sortWine();
-          }}
-          className="filter-button wine"
-        >
-          Wine
-        </button>
-        <button
-          onClick={() => {
-            sortCoffee();
-          }}
-          className="filter-button coffee"
-        >
-          Coffee
-        </button>
+          <button
+            onClick={() => {
+              sortAll();
+            }}
+          >
+            All
+          </button>
+          <button
+            onClick={() => {
+              sortPasta();
+            }}
+            className="filter-button pasta"
+          >
+            Pasta
+          </button>
+          <button
+            onClick={() => {
+              sortFish();
+            }}
+            className="filter-button fish"
+          >
+            Fish
+          </button>
+          <button
+            onClick={() => {
+              sortPizza();
+            }}
+            className="filter-button pizza"
+          >
+            Pizza
+          </button>
+          <button
+            onClick={() => {
+              sortWine();
+            }}
+            className="filter-button wine"
+          >
+            Wine
+          </button>
+          <button
+            onClick={() => {
+              sortCoffee();
+            }}
+            className="filter-button coffee"
+          >
+            Coffee
+          </button>
         </div>
       </div>
       <div className="lp-menu-items">
         <div className="lp-menu-item">
           <div className="pastaitem">
             <div className="lp-menu-item-img">
-              <a href="/PennePasta">
-                <img src={pasta1} alt="pasta" />
-                </a>
+              <img
+                onClick={() => history.push("/PennePasta")}
+                src={pasta1}
+                alt="pasta"
+              />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -154,9 +165,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pastaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pasta2} alt="pasta" />
-              </a>
+              <img src={pasta2} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -172,9 +181,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pastaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pasta3} alt="pasta" />
-              </a>
+              <img src={pasta3} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -190,9 +197,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pastaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pasta4} alt="pasta" />
-              </a>
+              <img src={pasta4} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -209,9 +214,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={fish1} alt="pasta" />
-              </a>
+              <img src={fish1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -227,9 +230,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={fish2} alt="pasta" />
-              </a>
+              <img src={fish2} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -245,9 +246,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={fish3} alt="pasta" />
-              </a>
+              <img src={fish3} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -263,9 +262,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={fish4} alt="pasta" />
-              </a>
+              <img src={fish4} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -282,9 +279,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pizzaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pizza1} alt="pasta" />
-              </a>
+              <img src={pizza1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -300,9 +295,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pizzaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pizza2} alt="pasta" />
-              </a>
+              <img src={pizza2} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -318,9 +311,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pizzaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pizza3} alt="pasta" />
-              </a>
+              <img src={pizza3} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -336,9 +327,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="pizzaitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={pizza4} alt="pasta" />
-              </a>
+              <img src={pizza4} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -355,9 +344,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="wineitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={wine1} alt="pasta" />
-              </a>
+              <img src={wine1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -373,9 +360,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="wineitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={wine1} alt="pasta" />
-              </a>
+              <img src={wine1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -391,9 +376,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="wineitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={wine1} alt="pasta" />
-              </a>
+              <img src={wine1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -409,9 +392,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="wineitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={wine1} alt="pasta" />
-              </a>
+              <img src={wine1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -428,9 +409,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="coffeeitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={coffee1} alt="pasta" />
-              </a>
+              <img src={coffee1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -446,9 +425,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="coffeeitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={coffee1} alt="pasta" />
-              </a>
+              <img src={coffee1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -464,9 +441,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="coffeeitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={coffee1} alt="pasta" />
-              </a>
+              <img src={coffee1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">
@@ -482,9 +457,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="coffeeitem">
             <div className="lp-menu-item-img">
-              <a href="#!">
-                <img src={coffee1} alt="pasta" />
-              </a>
+              <img src={coffee1} alt="pasta" />
             </div>
             <div className="lp-menu-item-content">
               <a href="#!" className="lp-menu-item-title">

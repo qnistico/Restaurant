@@ -63,15 +63,14 @@
 }
 
 .lp-menu .lp-menu-items .lp-menu-item .lp-menu-item-img {
-  width: 265px;
-  height: 193px;
+  width: 230px;
 }
 
 .lp-menu .lp-menu-items .lp-menu-item img {
-  width: 265px;
-  height: 193px;
+  width: 230px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .lp-menu .lp-menu-items .lp-menu-item .lp-menu-item-content {
@@ -119,9 +118,49 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: MenuFade 1000ms ease 0s 1 normal both;
+          animation: MenuFade 1000ms ease 0s 1 normal both;
 }
 
 .lp-menu .hide {
   display: none;
+  -webkit-animation: MenuHideFade 1000ms ease 0s 1 normal both;
+          animation: MenuHideFade 1000ms ease 0s 1 normal both;
+}
+
+@-webkit-keyframes MenuFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes MenuFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes MenuHideFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes MenuHideFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=LPMenu.css.map */

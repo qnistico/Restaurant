@@ -38,5 +38,14 @@ p {
   font-size: 19px;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  color: #261e1c !important;
+  background-color: #e0bc75 !important;
 }
 /*# sourceMappingURL=App.css.map */

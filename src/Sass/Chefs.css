@@ -48,6 +48,7 @@
 
 .chefs .chefs-flex .chefs-left p {
   margin-top: 20px;
+  color: #4d4d4d;
 }
 
 .chefs .chefs-flex .chefs-left .hero-button {
@@ -90,6 +91,10 @@
   font-size: 20px;
 }
 
+.chefs .chefs-flex .chefs-right .chef-item p {
+  color: #4d4d4d;
+}
+
 .chefs .chefs-flex .chefs-right .chef-item img {
   width: 350px;
   height: 350px;
@@ -118,5 +123,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+.chefs .chefs-flex .chefs-right .chef-item-bottom .MuiSvgIcon-root {
+  color: #3d312d;
 }
 /*# sourceMappingURL=Chefs.css.map */

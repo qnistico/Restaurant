@@ -12,14 +12,18 @@ import LandingPage from "./LandingPage";
 import MenuItemTemplate from "./MenuItemTemplate";
 import PennePasta from "./PennePasta";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="App">
       <Router>
+      <ScrollToTop />
+
         <Nav />
         <Switch>
           <Route exact path="/">

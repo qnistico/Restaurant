@@ -1,7 +1,7 @@
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 
-const ParallaxImg = (props) => {
+const Parallax = (props) => {
   return (
     <ParallaxBanner
       className="parallaxclass"
@@ -13,4 +13,4 @@ const ParallaxImg = (props) => {
   );
 };
 
-export default ParallaxImg;
+export default Parallax;

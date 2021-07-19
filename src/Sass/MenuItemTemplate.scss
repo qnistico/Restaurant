@@ -16,6 +16,12 @@
             font-size: 24px;
             font-weight: 700;
         }
+        img {
+            width: 62vw !important;
+            margin: auto;
+            max-height: 500px !important;
+            object-fit: cover;
+        }
     h1 {
         font-size: 48px;
     }
@@ -30,11 +36,7 @@ background-color: #f1f2f5;
     .food-allergies {
         background-color: #f1f2f5;
     }
-    .parallaxclass {
-        width: 62vw !important;
-        margin: auto;
-        object-fit: cover;
-    }
+    
 }
 }
 }

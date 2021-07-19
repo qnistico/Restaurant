@@ -28,6 +28,14 @@
   font-weight: 700;
 }
 
+.menu-item .menu-item-flex .menu-item-content img {
+  width: 62vw !important;
+  margin: auto;
+  max-height: 500px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .menu-item .menu-item-flex .menu-item-content h1 {
   font-size: 48px;
 }
@@ -44,12 +52,5 @@
 
 .menu-item .menu-item-flex .menu-item-content .food-allergies {
   background-color: #f1f2f5;
-}
-
-.menu-item .menu-item-flex .menu-item-content .parallaxclass {
-  width: 62vw !important;
-  margin: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=MenuItemTemplate.css.map */

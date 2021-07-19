@@ -47,8 +47,7 @@
 
 .coffee-overlay .parallaxclass {
   width: 100%;
-  position: absolute;
-  -webkit-filter: brightness(55%);
-          filter: brightness(55%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 /*# sourceMappingURL=CoffeeOverlay.css.map */

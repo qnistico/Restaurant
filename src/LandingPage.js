@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "./About";
 import Chefs from "./Chefs";
 import CoffeeOverlay from "./CoffeeOverlay";
@@ -7,6 +7,8 @@ import Hero from "./Hero";
 import LPMenu from "./LPMenu";
 
 function LandingPage() {
+  
+  
   return (
     <div className="landing-page">
       <Hero />

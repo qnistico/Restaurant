@@ -1,6 +1,9 @@
 import React from "react";
 import "./Sass/Footer.scss";
 import logo from "./img/logo.png";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 
 function Footer() {
   return (
@@ -57,6 +60,13 @@ function Footer() {
                 <li>Blog</li>
               </a>
             </ul>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2021 | Avellino's Italian Cuisine | All Rights Reserved</p>
+          <div>
+          <FacebookIcon />
+          <InstagramIcon />
           </div>
         </div>
       </footer>
