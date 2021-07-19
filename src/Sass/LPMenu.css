@@ -54,6 +54,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.lp-menu .lp-menu-items h2 {
+  padding-bottom: 30px;
+  font-family: 'Allura', sans-serif;
+  font-size: 32px;
+}
+
+.lp-menu .lp-menu-items-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -62,7 +80,7 @@
   margin: auto;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item {
+.lp-menu .lp-menu-items-flex .lp-menu-item {
   -webkit-box-flex: 1;
       -ms-flex: 1 40%;
           flex: 1 40%;
@@ -73,12 +91,12 @@
   position: relative;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item h2 {
+.lp-menu .lp-menu-items-flex .lp-menu-item h2 {
   position: absolute;
   top: 0;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .lp-menu-item-img {
+.lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-img {
   width: 230px;
   max-width: 230px;
   min-width: 230px;
@@ -87,7 +105,7 @@
   position: relative;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .menu-img-overlay {
+.lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay {
   width: 230px;
   min-width: 230px;
   height: 159px;
@@ -110,15 +128,15 @@
   cursor: pointer;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .menu-img-overlay:hover {
+.lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay:hover {
   opacity: 1;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .menu-img-overlay:hover .menu-img-overlay-button {
+.lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay:hover .menu-img-overlay-button {
   bottom: 58px;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .menu-img-overlay-button {
+.lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay-button {
   width: 100px;
   height: 40px;
   background-color: #261e1c;
@@ -134,7 +152,7 @@
   cursor: pointer;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item img {
+.lp-menu .lp-menu-items-flex .lp-menu-item img {
   width: 230px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -150,7 +168,7 @@
       image-rendering: pixelated;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .lp-menu-item-content {
+.lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-content {
   padding: 0 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +182,7 @@
           justify-content: space-between;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .lp-menu-item-title {
+.lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-title {
   font-size: 28px;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
@@ -172,11 +190,11 @@
   color: #111;
 }
 
-.lp-menu .lp-menu-items .lp-menu-item .lp-menu-item-ingredients {
+.lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-ingredients {
   font-size: 16px;
 }
 
-.lp-menu .pastaitem, .lp-menu .fishitem, .lp-menu .pizzaitem, .lp-menu .wineitem, .lp-menu .coffeeitem {
+.lp-menu .pastaitems, .lp-menu .fishitems, .lp-menu .pizzaitems, .lp-menu .wineitems, .lp-menu .coffeeitems {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: -webkit-box;

@@ -142,9 +142,12 @@ function LPMenu(props) {
           </button>
         </div>
       </div>
-      <div className="lp-menu-items">
+      <div className="lp-menu-items pastaitem">
+        <h2>Pasta</h2>
+      <div className="lp-menu-items-flex">
+
         <div className="lp-menu-item">
-          <div className="pastaitem">
+          <div className="pastaitems">
             <div className="lp-menu-item-img">
               <img src={pasta1} alt="pasta" />
               <div
@@ -166,7 +169,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="pastaitem">
+          <div className="pastaitems">
             <div className="lp-menu-item-img">
               <img src={pasta2} alt="pasta" />
               <div
@@ -188,7 +191,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="pastaitem">
+          <div className="pastaitems">
             <div className="lp-menu-item-img">
               <img src={pasta3} alt="pasta" />
               <div
@@ -210,7 +213,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="pastaitem">
+          <div className="pastaitems">
             <div className="lp-menu-item-img">
               <img src={pasta4} alt="pasta" />
               <div
@@ -231,9 +234,14 @@ function LPMenu(props) {
             </div>
           </div>
         </div>
+        </div>
+        </div>
         {/* fish */}
+        <div className="lp-menu-items fishitem">
+          <h2>Fish</h2>
+<div className="lp-menu-items-flex">
         <div className="lp-menu-item">
-          <div className="fishitem">
+          <div className="fishitems">
             <div className="lp-menu-item-img">
               <img src={fish1} alt="pasta" />
               <div
@@ -255,7 +263,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="fishitem">
+          <div className="fishitems">
             <div className="lp-menu-item-img">
               <img src={fish2} alt="pasta" />
               <div
@@ -277,7 +285,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="fishitem">
+          <div className="fishitems">
             <div className="lp-menu-item-img">
               <img src={fish3} alt="pasta" />
               <div
@@ -299,7 +307,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="fishitem">
+          <div className="fishitems">
             <div className="lp-menu-item-img">
               <img src={fish4} alt="pasta" />
               <div
@@ -320,9 +328,15 @@ function LPMenu(props) {
             </div>
           </div>
         </div>
+        </div>
+        </div>
         {/* pizza */}
+        <div className="lp-menu-items pizzaitem">
+          <h2>Pizza</h2>
+        <div className="lp-menu-items-flex">
+
         <div className="lp-menu-item">
-          <div className="pizzaitem">
+          <div className="pizzaitems">
             <div className="lp-menu-item-img">
               <img src={pizza1} alt="pasta" />
               <div
@@ -344,7 +358,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="pizzaitem">
+          <div className="pizzaitems">
             <div className="lp-menu-item-img">
               <img src={pizza2} alt="pasta" />
               <div
@@ -366,7 +380,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="pizzaitem">
+          <div className="pizzaitems">
             <div className="lp-menu-item-img">
               <img src={pizza3} alt="pasta" />
               <div
@@ -388,7 +402,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="pizzaitem">
+          <div className="pizzaitems">
             <div className="lp-menu-item-img">
               <img src={pizza4} alt="pasta" />
               <div
@@ -409,9 +423,15 @@ function LPMenu(props) {
             </div>
           </div>
         </div>
+        </div>
+        </div>
         {/* wine */}
+        <div className="lp-menu-items wineitem">
+          <h2>Wine</h2>
+        <div className="lp-menu-items-flex">
+
         <div className="lp-menu-item">
-          <div className="wineitem">
+          <div className="wineitems">
             <div className="lp-menu-item-img">
               <img src={wine1} alt="pasta" />
               <div
@@ -433,7 +453,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="wineitem">
+          <div className="wineitems">
             <div className="lp-menu-item-img">
               <img src={wine1} alt="pasta" />
               <div
@@ -455,7 +475,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="wineitem">
+          <div className="wineitems">
             <div className="lp-menu-item-img">
               <img src={wine1} alt="pasta" />
               <div
@@ -477,7 +497,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="wineitem">
+          <div className="wineitems">
             <div className="lp-menu-item-img">
               <img src={wine1} alt="pasta" />
               <div
@@ -497,10 +517,16 @@ function LPMenu(props) {
               <p className="lp-menu-item-price">$23.00</p>
             </div>
           </div>
+        </div>
+        </div>
         </div>
         {/* coffee */}
+        <div className="lp-menu-items coffeeitem">
+          <h2>Coffee</h2>
+        <div className="lp-menu-items-flex">
+
         <div className="lp-menu-item">
-          <div className="coffeeitem">
+          <div className="coffeeitems">
             <div className="lp-menu-item-img">
               <img src={coffee1} alt="pasta" />
               <div
@@ -522,7 +548,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="coffeeitem">
+          <div className="coffeeitems">
             <div className="lp-menu-item-img">
               <img src={coffee1} alt="pasta" />
               <div
@@ -544,7 +570,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="coffeeitem">
+          <div className="coffeeitems">
             <div className="lp-menu-item-img">
               <img src={coffee1} alt="pasta" />
               <div
@@ -566,7 +592,7 @@ function LPMenu(props) {
           </div>
         </div>
         <div className="lp-menu-item">
-          <div className="coffeeitem">
+          <div className="coffeeitems">
             <div className="lp-menu-item-img">
               <img src={coffee1} alt="pasta" />
               <div
@@ -585,10 +611,11 @@ function LPMenu(props) {
               </p>
               <p className="lp-menu-item-price">$23.00</p>
             </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
