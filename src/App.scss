@@ -37,7 +37,9 @@ p {
   font-size: 19px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+
 }
 
 .hero-button:hover,
@@ -45,4 +47,6 @@ p {
 .hero-button:active {
   color: #261e1c !important;
   background-color: #e0bc75 !important;
+  box-shadow: none;
 }
+
