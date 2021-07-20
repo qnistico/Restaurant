@@ -19,7 +19,7 @@ import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function LPMenu(props) {
-  let animationTime = 0.8
+  let animationTime = 1
   let animationDelay = 0
   
   let menuItems = document.getElementsByClassName("menuItem")
@@ -99,7 +99,7 @@ function LPMenu(props) {
         </div>
  
       <div className="lp-menu-items">
-        <h2 className="menuItem pasta">Pasta</h2>
+        <h3 className="menuItem pasta">Pasta</h3>
       <div className=" menuItem pasta lp-menu-items-flex">
 
         <div className="lp-menu-item">
@@ -194,12 +194,12 @@ function LPMenu(props) {
         </div>
         {/* fish */}
         <div className="lp-menu-items">
-          <h2 className="menuItem fish ">Fish</h2>
+          <h3 className="menuItem fish ">Fish</h3>
 <div className=" menuItem fish lp-menu-items-flex">
         <div className="lp-menu-item">
           <div className="fishitems">
             <div className="lp-menu-item-img">
-              <img src={fish1} alt="pasta" />
+              <img src={fish1} s />
               <div
                 className="menu-img-overlay"
                 onClick={() => history.push("/PennePasta")}
@@ -221,7 +221,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitems">
             <div className="lp-menu-item-img">
-              <img src={fish2} alt="pasta" />
+              <img src={fish2} s />
               <div
                 className="menu-img-overlay"
                 onClick={() => history.push("/PennePasta")}
@@ -243,7 +243,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitems">
             <div className="lp-menu-item-img">
-              <img src={fish3} alt="pasta" />
+              <img src={fish3} s />
               <div
                 className="menu-img-overlay"
                 onClick={() => history.push("/PennePasta")}
@@ -265,7 +265,7 @@ function LPMenu(props) {
         <div className="lp-menu-item">
           <div className="fishitems">
             <div className="lp-menu-item-img">
-              <img src={fish4} alt="pasta" />
+              <img src={fish4} s />
               <div
                 className="menu-img-overlay"
                 onClick={() => history.push("/PennePasta")}
@@ -288,7 +288,7 @@ function LPMenu(props) {
         </div>
         {/* pizza */}
         <div className="lp-menu-items">
-          <h2 className="pizza menuItem">Pizza</h2>
+          <h3 className="pizza menuItem">Pizza</h3>
         <div className=" menuItem pizza lp-menu-items-flex">
 
         <div className="lp-menu-item">
@@ -383,7 +383,7 @@ function LPMenu(props) {
         </div>
         {/* wine */}
         <div className="lp-menu-items">
-          <h2 className="wine menuItem">Wine</h2>
+          <h3 className="wine menuItem">Wine</h3>
         <div className=" menuItem wine lp-menu-items-flex">
 
         <div className="lp-menu-item">
@@ -478,7 +478,7 @@ function LPMenu(props) {
         </div>
         {/* coffee */}
         <div className="lp-menu-items">
-          <h2 className="coffee menuItem">Coffee</h2>
+          <h3 className="coffee menuItem">Coffee</h3>
         <div className=" menuItem coffee lp-menu-items-flex">
 
         <div className="lp-menu-item">

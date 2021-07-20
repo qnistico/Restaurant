@@ -4,6 +4,11 @@
   background-color: #f1e7dc;
 }
 
+.lp-menu h2 {
+  border: 5px solid #261e1c;
+  padding: 12px 30px;
+}
+
 .lp-menu .menu-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +18,7 @@
           justify-content: space-between;
   max-width: 1400px;
   margin: auto;
+  padding-bottom: 40px;
 }
 
 .lp-menu .menuButton {
@@ -30,15 +36,6 @@
   transition: all 0.3s ease;
 }
 
-.lp-menu .filter-button::before {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 2px;
-  background-color: #261e1c;
-  margin-top: 28px;
-}
-
 .lp-menu .lp-menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,11 +48,21 @@
   margin: auto;
 }
 
-.lp-menu .lp-menu-items h2 {
-  padding-bottom: 30px;
+.lp-menu .lp-menu-items h3 {
+  padding-bottom: 40px;
   font-family: 'Allura', sans-serif;
   font-size: 32px;
   color: #261e1c;
+}
+
+.lp-menu .lp-menu-items h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #261e1c;
+  margin-top: 41px;
 }
 
 .lp-menu .lp-menu-items-flex {
@@ -91,8 +98,9 @@
   max-width: 230px;
   min-width: 230px;
   overflow: hidden;
-  max-height: 159px;
+  max-height: 148px;
   position: relative;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.23);
           box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.23);
 }
@@ -100,7 +108,7 @@
 .lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay {
   width: 230px;
   min-width: 230px;
-  height: 159px;
+  height: 148px;
   color: black;
   opacity: 0;
   position: absolute;
@@ -125,7 +133,7 @@
 }
 
 .lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay:hover .menu-img-overlay-button {
-  bottom: 58px;
+  bottom: 53px;
 }
 
 .lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay-button {
@@ -152,7 +160,8 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   overflow: hidden;
-  max-height: 159px;
+  max-height: 148px;
+  border-radius: 8px;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: -moz-crisp-edges;
@@ -175,7 +184,7 @@
 }
 
 .lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-title {
-  font-size: 28px;
+  font-size: 23px;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -184,6 +193,11 @@
 
 .lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-ingredients {
   font-size: 16px;
+  color: #4d4d4d;
+}
+
+.lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-price {
+  font-weight: 700;
 }
 
 .lp-menu .pastaitems, .lp-menu .fishitems, .lp-menu .pizzaitems, .lp-menu .wineitems, .lp-menu .coffeeitems {

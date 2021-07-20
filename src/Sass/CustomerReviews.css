@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=CustomerReviews.css.map */
+.customer-reviews {
+  padding: 60px 30px 0px 30px;
+  min-height: 85vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.71)), to(rgba(0, 0, 0, 0.71))), url(./bgimages/reviewsbgimg.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(./bgimages/reviewsbgimg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.customer-reviews h2 {
+  padding: 30px 30px 0 30px;
+  color: #ad985f;
+  font-size: 32px;
+  font-family: 'Allura', sans-serif;
+}
+
+.customer-reviews .customer-reviews-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 30px;
+  color: #f1f2f5;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.customer-reviews .customer-reviews-item h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ad985f;
+}
+
+.customer-reviews .customer-reviews-item p {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  max-width: 1000px;
+}
+
+.customer-reviews .customer-reviews-item img {
+  width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100px;
+  border: 1px solid #ad985f;
+  padding: 7.5px;
+}
+
+.customer-reviews .customer-reviews-item .customer-reviews-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=CustomerReviews.css.map */

@@ -64,8 +64,31 @@
         border: 1px solid #ad985f;
         font-weight: 600;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.4s ease;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+        transform: translateY(0);
+  position: relative;
+  overflow:hidden;
+      }
+
+      .single-card-button::before {
+        content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background: linear-gradient(to right, #e0bc75, #e0bc75);
+  transform: scaleY(0);
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+  transform-origin: 0% 100%;
+      }
+      .single-card-button:hover:before,
+      .single-card-button:focus:before,
+      .single-card-button:active:before {
+        transform: scaleX(1.1);
 
       }
       .single-card-button:hover,
@@ -74,6 +97,7 @@
         color: #261e1c;
         background-color: #e0bc75;
         box-shadow: none;
+
       }
     }
   }

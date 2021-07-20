@@ -38,10 +38,49 @@ p {
   font-size: 19px;
   font-weight: 700;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#e0bc75), to(#e0bc75));
+  background: linear-gradient(to right, #e0bc75, #e0bc75);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.hero-button:hover:before,
+.hero-button:focus:before,
+.hero-button:active:before {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  color: #333;
+  -webkit-box-shadow: 0 50px 35px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 50px 35px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-button:hover,
