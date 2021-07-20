@@ -8,9 +8,9 @@ footer .footer-flex {
   display: -ms-flexbox;
   display: flex;
   max-width: 1400px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: auto;
   padding: 60px 0;
 }
@@ -46,18 +46,37 @@ footer .footer-flex .footer-about img {
 }
 
 footer .footer-bottom {
+  padding: 20px;
+  color: #d1d1d1;
+  background-color: #161211;
+}
+
+footer .footer-bottom .footer-bottom-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
-  color: #d1d1d1;
-  background-color: #161211;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 1400px;
+  padding: 0 30px;
 }
 
-footer .footer-bottom .MuiSvgIcon-root {
+footer .footer-bottom .footer-bottom-flex .footer-bottom-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-bottom .footer-bottom-flex .footer-bottom-icons .MuiSvgIcon-root {
   margin-left: 5px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=Footer.css.map */

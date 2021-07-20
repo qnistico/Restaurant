@@ -63,10 +63,12 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
+          <div className="footer-bottom-flex">
           <p>&copy; 2021 | Avellino's Italian Cuisine | All Rights Reserved</p>
-          <div>
+          <div className="footer-bottom-icons">
           <FacebookIcon />
           <InstagramIcon />
+          </div>
           </div>
         </div>
       </footer>

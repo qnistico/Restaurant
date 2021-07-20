@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./Sass/LPMenu.scss";
 import coffee1 from "./img/coffee.jpg";
@@ -18,9 +19,62 @@ import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function LPMenu(props) {
-  window.onload = function () {
-    sortAll();
-  };
+  let animationTime = 0.8
+  let animationDelay = 0
+  
+  let menuItems = document.getElementsByClassName("menuItem")
+  let menuButtons = document.getElementsByClassName("menuButton")
+  
+  window.onload = function() {
+  
+      for (let item of menuItems) {
+  
+          item.style.animation = "fadeIn " + animationTime + "s"
+      }
+      for (let button of menuButtons) {
+  
+          if (button.classList.contains("menuItemButton")) {
+  
+              button.classList.add("menuButtonActive")
+          }
+      }
+  }
+  
+  function menuSortItems(category) {
+  
+      let i = 0
+      let height
+  
+      for (let item of menuItems) {
+  
+          i++
+          height = item.scrollHeight
+  
+          item.classList.add("menuItemHide")
+      }
+  
+      for (let item of menuItems) {
+  
+          if (item.classList.contains(category)) {
+  
+              item.classList.remove("menuItemHide")
+          } else {
+  
+              item.classList.add("menuItemHide")
+          }
+      }
+  
+      for (let button of menuButtons) {
+  
+          if (button.classList.contains(category + "Button")) {
+  
+              button.classList.add("menuButtonActive")
+          } else {
+  
+              button.classList.remove("menuButtonActive")
+          }
+      }
+  }
   /*
   function activeButton() {
     var active = document.querySelectorAll(".filter-button");
@@ -28,123 +82,25 @@ function LPMenu(props) {
   }
   */
 
-  function sortAll() {
-    var showAll = document.querySelectorAll(
-      "div.pastaitem, div.pizzaitem, div.fishitem, div.wineitem, div.coffeeitem"
-    );
-    showAll.forEach((all) => all.classList.add("show"));
-    showAll.forEach((all) => all.classList.remove("hide"));
-  }
-  function sortPasta() {
-    var hideOthers1 = document.querySelectorAll(
-      "div.fishitem, div.pizzaitem, div.wineitem, div.coffeeitem"
-    );
-    var showPasta = document.querySelectorAll("div.pastaitem");
-    hideOthers1.forEach((el) => el.classList.remove("show"));
-    hideOthers1.forEach((el) => el.classList.add("hide"));
-    showPasta.forEach((el) => el.classList.add("show"));
-    showPasta.forEach((el) => el.classList.remove("hide"));
-  }
-  function sortFish() {
-    var hideOthers2 = document.querySelectorAll(
-      "div.pastaitem, div.pizzaitem, div.wineitem, div.coffeeitem"
-    );
-    var showFish = document.querySelectorAll("div.fishitem");
-    hideOthers2.forEach((el) => el.classList.remove("show"));
-    hideOthers2.forEach((el) => el.classList.add("hide"));
-    showFish.forEach((el) => el.classList.add("show"));
-    showFish.forEach((el) => el.classList.remove("hide"));
-  }
-  function sortPizza() {
-    var hideOthers3 = document.querySelectorAll(
-      "div.pastaitem, div.fishitem, div.wineitem, div.coffeeitem"
-    );
-    var showPizza = document.querySelectorAll("div.pizzaitem");
-    hideOthers3.forEach((el) => el.classList.remove("show"));
-    hideOthers3.forEach((el) => el.classList.add("hide"));
-    showPizza.forEach((el) => el.classList.add("show"));
-    showPizza.forEach((el) => el.classList.remove("hide"));
-  }
-  function sortWine() {
-    var hideOthers4 = document.querySelectorAll(
-      "div.pastaitem, div.fishitem, div.pizzaitem, div.coffeeitem"
-    );
-    var showWine = document.querySelectorAll("div.wineitem");
-    hideOthers4.forEach((el) => el.classList.remove("show"));
-    hideOthers4.forEach((el) => el.classList.add("hide"));
-    showWine.forEach((el) => el.classList.add("show"));
-    showWine.forEach((el) => el.classList.remove("hide"));
-  }
-  function sortCoffee() {
-    var hideOthers5 = document.querySelectorAll(
-      "div.pastaitem, div.fishitem, div.pizzaitem, div.wineitem"
-    );
-    var showCoffee = document.querySelectorAll("div.coffeeitem");
-    hideOthers5.forEach((el) => el.classList.remove("show"));
-    hideOthers5.forEach((el) => el.classList.add("hide"));
-    showCoffee.forEach((el) => el.classList.add("show"));
-    showCoffee.forEach((el) => el.classList.remove("hide"));
-  }
+  
   const history = useHistory();
   return (
     <div className="lp-menu">
-      <div className="menu-lists">
+      <div className="menu-buttons">
         <h2>Browse Our Menu</h2>
-
-        <div>
-          <button
-            onClick={() => {
-              sortAll();
-            }}
-            className="filter-button"
-          >
-            All
-          </button>
-          <button
-            onClick={() => {
-              sortPasta();
-            }}
-            className="filter-button pasta"
-          >
-            Pasta
-          </button>
-          <button
-            onClick={() => {
-              sortFish();
-            }}
-            className="filter-button fish"
-          >
-            Fish
-          </button>
-          <button
-            onClick={() => {
-              sortPizza();
-            }}
-            className="filter-button pizza"
-          >
-            Pizza
-          </button>
-          <button
-            onClick={() => {
-              sortWine();
-            }}
-            className="filter-button wine"
-          >
-            Wine
-          </button>
-          <button
-            onClick={() => {
-              sortCoffee();
-            }}
-            className="filter-button coffee"
-          >
-            Coffee
-          </button>
+<div>
+            <button className="menuButton menuItemButton" onClick={() => menuSortItems('menuItem')}>All</button>
+            <button className="menuButton pastaButton" onClick={() => menuSortItems('pasta')}>Pasta</button>
+            <button className="menuButton fishButton" onClick={() => menuSortItems('fish')}>Fish</button>
+            <button className="menuButton pizzaButton" onClick={() => menuSortItems('pizza')}>Pizza</button>
+            <button className="menuButton wineButton" onClick={() => menuSortItems('wine')}>Wine</button>
+            <button className="menuButton coffeeButton" onClick={() => menuSortItems('coffee')}>Coffee</button>
+            </div>
         </div>
-      </div>
-      <div className="lp-menu-items pastaitem">
-        <h2>Pasta</h2>
-      <div className="lp-menu-items-flex">
+ 
+      <div className="lp-menu-items">
+        <h2 className="menuItem pasta">Pasta</h2>
+      <div className=" menuItem pasta lp-menu-items-flex">
 
         <div className="lp-menu-item">
           <div className="pastaitems">
@@ -237,9 +193,9 @@ function LPMenu(props) {
         </div>
         </div>
         {/* fish */}
-        <div className="lp-menu-items fishitem">
-          <h2>Fish</h2>
-<div className="lp-menu-items-flex">
+        <div className="lp-menu-items">
+          <h2 className="menuItem fish ">Fish</h2>
+<div className=" menuItem fish lp-menu-items-flex">
         <div className="lp-menu-item">
           <div className="fishitems">
             <div className="lp-menu-item-img">
@@ -331,9 +287,9 @@ function LPMenu(props) {
         </div>
         </div>
         {/* pizza */}
-        <div className="lp-menu-items pizzaitem">
-          <h2>Pizza</h2>
-        <div className="lp-menu-items-flex">
+        <div className="lp-menu-items">
+          <h2 className="pizza menuItem">Pizza</h2>
+        <div className=" menuItem pizza lp-menu-items-flex">
 
         <div className="lp-menu-item">
           <div className="pizzaitems">
@@ -426,9 +382,9 @@ function LPMenu(props) {
         </div>
         </div>
         {/* wine */}
-        <div className="lp-menu-items wineitem">
-          <h2>Wine</h2>
-        <div className="lp-menu-items-flex">
+        <div className="lp-menu-items">
+          <h2 className="wine menuItem">Wine</h2>
+        <div className=" menuItem wine lp-menu-items-flex">
 
         <div className="lp-menu-item">
           <div className="wineitems">
@@ -521,9 +477,9 @@ function LPMenu(props) {
         </div>
         </div>
         {/* coffee */}
-        <div className="lp-menu-items coffeeitem">
-          <h2>Coffee</h2>
-        <div className="lp-menu-items-flex">
+        <div className="lp-menu-items">
+          <h2 className="coffee menuItem">Coffee</h2>
+        <div className=" menuItem coffee lp-menu-items-flex">
 
         <div className="lp-menu-item">
           <div className="coffeeitems">

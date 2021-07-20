@@ -4,13 +4,10 @@
   background-color: #f1e7dc;
 }
 
-.lp-menu .menu-lists {
+.lp-menu .menu-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -18,22 +15,14 @@
   margin: auto;
 }
 
-.lp-menu .menu-lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.lp-menu .filter-button {
+.lp-menu .menuButton {
   list-style: none;
-  font-size: 19px;
+  font-size: 17px;
   padding: 12px 20px;
-  margin-left: 30px;
-  color: #333;
-  background-color: transparent;
-  border: none;
+  margin-left: 10px;
+  color: #e0bc75;
+  background-color: #261e1c;
+  border: 1px solid #ad985f;
   width: 100px;
   text-align: center;
   cursor: pointer;
@@ -66,6 +55,7 @@
   padding-bottom: 30px;
   font-family: 'Allura', sans-serif;
   font-size: 32px;
+  color: #261e1c;
 }
 
 .lp-menu .lp-menu-items-flex {
@@ -103,6 +93,8 @@
   overflow: hidden;
   max-height: 159px;
   position: relative;
+  -webkit-box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.23);
 }
 
 .lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay {
@@ -147,8 +139,8 @@
   bottom: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.158);
   cursor: pointer;
 }
 
@@ -203,27 +195,18 @@
   padding: 0 30px 30px 0;
 }
 
-.lp-menu .active {
-  background-color: #e0bc75 !important;
-  color: #111 !important;
-  border-color: #111 !important;
+.lp-menu .menuButtonActive {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+  background-color: #e0bc75;
+  color: black;
 }
 
-.lp-menu .show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: MenuFade 1000ms ease 0s 1 normal both;
-          animation: MenuFade 1000ms ease 0s 1 normal both;
+.lp-menu .menuItemHide {
+  display: none !important;
 }
 
-.lp-menu .hide {
-  display: none;
-  -webkit-animation: MenuHideFade 1000ms ease 0s 1 normal both;
-          animation: MenuHideFade 1000ms ease 0s 1 normal both;
-}
-
-@-webkit-keyframes MenuFade {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -232,30 +215,12 @@
   }
 }
 
-@keyframes MenuFade {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes MenuHideFade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes MenuHideFade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 /*# sourceMappingURL=LPMenu.css.map */
