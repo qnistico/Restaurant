@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.coffee-overlay .coffee-overlay-gradient {
+  width: 100%;
+  height: 85vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+}
+
 .coffee-overlay .coffee-overlay-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,12 +25,26 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  width: 100%;
+  min-height: 85vh;
 }
 
 .coffee-overlay .coffee-overlay-flex .coffee-overlay-content {
   z-index: 2;
-  position: absolute;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .coffee-overlay .coffee-overlay-flex .coffee-overlay-content h2 {
@@ -43,11 +65,5 @@
   color: white;
   margin-top: 40px;
   border: 1px solid #ad985f;
-}
-
-.coffee-overlay .parallaxclass {
-  width: 100%;
-  -webkit-filter: brightness(55%);
-          filter: brightness(55%);
 }
 /*# sourceMappingURL=CoffeeOverlay.css.map */

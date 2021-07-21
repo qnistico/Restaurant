@@ -1,0 +1,36 @@
+.contact-us {
+    width: 100%;
+    .contact-us-flex {
+        display: flex;
+        .contact-left {
+            padding: 60px;
+            background-color: #261e1c;
+            h2 {
+                color: #ad985f;
+            }
+            p {
+                color: #f1f2f5;
+                margin-top: 20px;
+            }
+        }
+    }
+    .contact-form {
+        width: 100%;
+        padding: 60px;
+        background-color: #ad985f;
+    
+    .form-group {
+        display: flex;
+        flex-flow: column;
+        label {
+            margin: 10px 0;
+        }
+        input {
+            padding: 8px;
+            background-color: #e6e6e6;
+            outline: none;
+            border: none;
+        }
+    }
+}
+}

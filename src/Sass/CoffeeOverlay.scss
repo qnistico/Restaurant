@@ -1,40 +1,46 @@
 .coffee-overlay {
+  width: 100%;
+  .coffee-overlay-gradient {
     width: 100%;
-    .coffee-overlay-flex {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
+    height: 85vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    position: absolute;
+  }
+  .coffee-overlay-flex {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    min-height: 85vh;
+
+    .coffee-overlay-content {
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: 64px;
+        color: white;
+      }
+      p {
+        max-width: 1000px;
         margin: auto;
-        
-        
-        .coffee-overlay-content {
-            z-index: 2;
-            position: absolute;
-            text-align: center;
-            h2 {
-                font-size: 64px;
-                color: white;
-            }
-            p {
-                max-width: 1000px;
-                margin: auto;
-                font-size: 24px;
-                font-weight: 600;
-                color: white;
-                margin-top: 20px;
-            }
-            .hero-button {
-                color: white;
-                margin-top: 40px;
-                border: 1px solid #ad985f;
-            }
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        margin-top: 20px;
+      }
+      .hero-button {
+        color: white;
+        margin-top: 40px;
+        border: 1px solid #ad985f;
+      }
     }
-    }
-    .parallaxclass {
-        width: 100%;
-        filter: brightness(55%);
-            
-        
-    }
+  }
+  
 }
+
