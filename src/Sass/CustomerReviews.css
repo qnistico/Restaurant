@@ -1,17 +1,22 @@
 .customer-reviews {
-  padding: 60px 30px 0px 30px;
-  min-height: 85vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.71)), to(rgba(0, 0, 0, 0.71))), url(./bgimages/reviewsbgimg.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(./bgimages/reviewsbgimg.jpg);
-  background-size: cover;
-  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.customer-reviews .parallax-overlay-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
+  z-index: 0;
 }
 
 .customer-reviews h2 {
-  padding: 30px 30px 0 30px;
-  color: #ad985f;
+  color: #e0bc75;
   font-size: 32px;
   font-family: 'Allura', sans-serif;
+  padding: 30px 0;
 }
 
 .customer-reviews .customer-reviews-item {
@@ -33,12 +38,13 @@
   color: #f1f2f5;
   cursor: -webkit-grab;
   cursor: grab;
+  position: relative;
 }
 
 .customer-reviews .customer-reviews-item h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #ad985f;
+  color: #e0bc75;
 }
 
 .customer-reviews .customer-reviews-item p {
@@ -48,7 +54,7 @@
   max-width: 1000px;
 }
 
-.customer-reviews .customer-reviews-item img {
+.customer-reviews .customer-reviews-item .customer-reviews-img {
   width: 160px;
   height: 160px;
   -o-object-fit: cover;
