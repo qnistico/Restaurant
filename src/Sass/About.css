@@ -39,8 +39,8 @@
 
 .about .about-flex .about-left img {
   width: 100%;
-  -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.158);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.158);
 }
 
 .about .about-right {

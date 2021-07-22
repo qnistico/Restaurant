@@ -11,7 +11,7 @@ function About(props) {
     <div className="about">
       <div className="about-flex">
         <div className="about-left">
-          <p className="about-header">Welcome to Ravioliiiii</p>
+          <p className="about-header">Welcome to Avellino's</p>
           <h2>
             We are a modern Italian restaurant in Somewhere specializing in
             authentic Italian cuisine

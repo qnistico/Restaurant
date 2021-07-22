@@ -9,8 +9,7 @@ import Nav from "./Nav";
 
 import './App.scss';
 import LandingPage from "./LandingPage";
-import MenuItemTemplate from "./MenuItemTemplate";
-import PennePasta from "./PennePasta";
+import MenuItem from "./MenuItem";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 
@@ -27,12 +26,10 @@ function App() {
           <Route exact path="/">
           <LandingPage />
           </Route>
-          <Route exact path="/MenuItemTemplate">
-            <MenuItemTemplate />
+          <Route exact path="/MenuItem">
+            <MenuItem />
           </Route>
-          <Route exact path="/PennePasta">
-            <PennePasta />
-          </Route>
+          
         </Switch>
         <Footer />
       </Router>

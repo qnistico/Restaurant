@@ -13,16 +13,19 @@ function ContactUs() {
               date & time.
             </p>
             <hr />
-            <h3>Hours</h3>
+            <div className="hours-location-flex">
+                <div className="hours">
+            <h3>Hours & Location</h3>
             <ul>
-              <li>Monday, 3pm - 10pm</li>
-              <li>Tuesday, 3pm - 10pm</li>
-              <li>Wednesday, 3pm - 10pm</li>
-              <li>Thursday, 3pm - 10pm</li>
-              <li>Friday, 3pm - 10pm</li>
+              <li>Monday - Friday, 3pm - 10pm</li>
               <li>Saturday, 5pm - 10pm</li>
               <li>Sunday, 5pm - 10pm</li>
             </ul>
+            </div>
+            <div className="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195601.28720359915!2d-75.25811239143708!3d40.00241367555988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1626930573030!5m2!1sen!2sus" width="400" height="300" loading="lazy"></iframe>
+            </div>
+          </div>
           </div>
         </div>
         <form className="contact-form">
