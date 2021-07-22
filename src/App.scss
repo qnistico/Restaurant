@@ -30,7 +30,8 @@ p {
 }
 
 
-.hero-button {
+.hero-button,
+.send-button {
   background-color: #261e1c;
   color: #e0bc75;
   padding: 12px 20px;
@@ -44,7 +45,8 @@ p {
   position: relative;
   overflow:hidden;
 }
-.hero-button:before {
+.hero-button::before,
+.send-button::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -62,21 +64,22 @@ p {
 
 .hero-button:hover:before,
 .hero-button:focus:before,
-.hero-button:active:before {
+.hero-button:active:before,
+.send-button:hover:before,
+.send-button:focus:before,
+.send-button:active:before {
 
   transform: scaleX(1.1);
 }
 
-.hero-button:hover,
-.hero-button:focus,
-.hero-button:active {
-  color: #333;
-  box-shadow:0 50px 35px 10px rgba(0,0,0,0.3);
-}
+
 
 .hero-button:hover,
 .hero-button:focus,
-.hero-button:active {
+.hero-button:active,
+.send-button:hover,
+.send-button:focus,
+.send-button:active {
   color: #261e1c !important;
   background-color: #e0bc75 !important;
   box-shadow: none;
