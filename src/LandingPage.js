@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import About from "./About";
 import Chefs from "./Chefs";
 import CoffeeOverlay from "./CoffeeOverlay";
@@ -8,20 +8,19 @@ import FoodShowcase from "./FoodShowcase";
 import Hero from "./Hero";
 import LPMenu from "./LPMenu";
 
-function LandingPage() {
-  
-  
+function LandingPage(props) {
+  const [menuCategory, setMenuCategory] = useState(false);
+
   return (
     <div className="landing-page">
       <Hero />
       <About />
-      <LPMenu />
+      <LPMenu menuCategory={menuCategory} setMenuCategory={setMenuCategory} />
 
       <Chefs />
-      <CoffeeOverlay />
+      <CoffeeOverlay setMenuCategory={setMenuCategory} />
       <ContactUs />
       <CustomerReviews />
-
     </div>
   );
 }

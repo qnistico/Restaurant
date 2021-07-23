@@ -93,7 +93,7 @@ function Nav() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Blog
+                  Contact Us
                 </NavLink>
               </li>
               <li className="nav-item mobile_show">

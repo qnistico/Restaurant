@@ -24,8 +24,8 @@ function LPMenu(props) {
   let menuItems = document.getElementsByClassName("menuItem");
   let menuButtons = document.getElementsByClassName("menuButton");
 
-  const [menuCategory, setMenuCategory] = useState(false);
-
+  const menuCategory = props.menuCategory;
+  const setMenuCategory = props.setMenuCategory;
   window.onload = function () {
     for (let item of menuItems) {
       item.style.animation = "fadeIn " + animationTime + "s";
