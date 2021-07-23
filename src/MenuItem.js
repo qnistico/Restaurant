@@ -16,39 +16,39 @@ import pizza4 from "./img/pizza4.jpg";
 import wine1 from "./img/wine1.jpg";
 import coffee1 from "./img/coffee.jpg";
 
-
 function MenuItem(props) {
   const { handle } = useParams();
 
   const menuData = [
     {
       foodimg: pasta1,
-      foodalt: "beans",
-      foodtitle: "beans",
-      fooddescription: "beans",
-      foodingredients: "beans",
-      foodallergens: "beans",
-      foodprice: "beans",
+      foodalt: "pasta",
+      foodtitle: "Penne Pasta",
+      fooddescription:
+        "Penne pasta with tomatoes and parmesan cheese served on a bed of lettuce",
+      foodingredients: "Wheat pasta, tomatoes, cream, oregeno and butter",
+      foodallergens: "Gluten | Dairy",
+      foodprice: "$17.00",
       foodID: "1",
     },
     {
       foodimg: pasta2,
-      foodalt: "greenbeans",
-      foodtitle: "greenbeans",
-      fooddescription: "greenbeans",
-      foodingredients: "greenbeans",
-      foodallergens: "greenbeans",
-      foodprice: "greenbeans",
+      foodalt: "pasta",
+      foodtitle: "Pasta with Shrimp",
+      fooddescription: "Penne pasta with tomatoes, shrimp basil and butter",
+      foodingredients: "Wheat pasta, tomatoes, shrimp, basil and butter",
+      foodallergens: "Gluten | Dairy",
+      foodprice: "$23.00",
       foodID: "2",
     },
     {
       foodimg: pasta3,
-      foodalt: "pintobeans",
-      foodtitle: "pintobeans",
-      fooddescription: "pintobeans",
-      foodingredients: "pintobeans",
-      foodallergens: "pintobeans",
-      foodprice: "pintobeans",
+      foodalt: "pasta",
+      foodtitle: "Linguine Pasta",
+      fooddescription: "Linguine with mushrooms, cream, parmesan cheese, tomato sauce and basil",
+      foodingredients: "Wheat pasta, mushrooms, cream, parmesan cheese, tomato suace and basil",
+      foodallergens: "Gluten | Dairy",
+      foodprice: "$22.00",
       foodID: "3",
     },
     {
@@ -59,11 +59,91 @@ function MenuItem(props) {
       foodingredients: "pintobeans",
       foodallergens: "pintobeans",
       foodprice: "pintobeans",
-      foodID: "3",
+      foodID: "4",
+    },
+    {
+      foodimg: fish1,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "5",
+    },
+    {
+      foodimg: fish2,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "6",
+    },
+    {
+      foodimg: fish3,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "7",
+    },
+    {
+      foodimg: fish4,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "8",
+    },
+    {
+      foodimg: pizza1,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "9",
+    },
+    {
+      foodimg: pizza2,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "10",
+    },
+    {
+      foodimg: pizza3,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "11",
+    },
+    {
+      foodimg: pizza4,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "12",
     },
   ];
   var foodID = new URLSearchParams(window.location.search).get("ID");
-  const foodItem = menuData.find((food) => food.foodID==foodID);
+  const foodItem = menuData.find((food) => food.foodID == foodID);
   return (
     <div className="menu-item">
       <div className="menu-item-flex">

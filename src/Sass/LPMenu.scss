@@ -149,9 +149,10 @@
   .coffeeitems {
     transition: all 0.3s ease;
     display: flex;
-    padding: 0 30px 30px 0;
+    margin: 0 30px 30px 0;
     cursor: pointer;
   }
+  
   .pastaitems:hover .menu-img-overlay,
   .fishitems:hover .menu-img-overlay,
   .pizzaitems:hover .menu-img-overlay,

@@ -9,12 +9,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   max-width: 1400px;
   margin: auto;
 }
 
-.chefs .chefs-flex .chefs-left {
-  width: 38%;
+.chefs .chefs-flex .chefs-top {
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,38 +30,48 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   padding: 30px;
-  background-color: #f1f2f5;
-  margin-right: 15px;
-  -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.125);
-          box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.125);
-  border: 1px solid #d9d9d9;
 }
 
-.chefs .chefs-flex .chefs-left h3 {
+.chefs .chefs-flex .chefs-top h3 {
   color: #a08b52;
-  font-size: 32px;
+  font-size: 40px;
   font-family: 'Allura', sans-serif;
   font-weight: 600;
 }
 
-.chefs .chefs-flex .chefs-left h2 {
-  line-height: 1.4;
+.chefs .chefs-flex .chefs-top h2 {
   margin-top: 10px;
 }
 
-.chefs .chefs-flex .chefs-left p {
-  margin-top: 20px;
+.chefs .chefs-flex .chefs-top p {
+  max-width: 1000px;
+  margin: 20px auto 0 auto;
   color: #4d4d4d;
 }
 
-.chefs .chefs-flex .chefs-left .hero-button {
+.chefs .chefs-flex .chefs-top .hero-button {
   max-width: 200px;
   font-size: 16px;
   margin-top: 30px;
 }
 
-.chefs .chefs-flex .chefs-right {
+.chefs .chefs-flex .chefs-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+.chefs .chefs-flex .chefs-cards .chef-card {
+  width: 30%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,67 +79,55 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  width: 62%;
-  margin-left: 15px;
-  background-color: #f1e7dc;
-  padding: 30px;
-  -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.125);
-          box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.125);
   border: 1px solid #d9d9d9;
+  -webkit-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+  margin: 15px;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item:first-of-type {
-  margin-bottom: 30px;
+.chefs .chefs-flex .chefs-cards .chef-card .chef-item-content {
+  padding: 20px;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.chefs .chefs-flex .chefs-right .chef-item h3 {
+.chefs .chefs-flex .chefs-cards .chef-card .chef-item-content h3 {
   font-size: 20px;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item p {
+.chefs .chefs-flex .chefs-cards .chef-card .chef-item-content p {
   color: #4d4d4d;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item img {
-  width: 350px;
-  height: 350px;
+.chefs .chefs-flex .chefs-cards .chef-card .chef-item-content img {
+  width: 100%;
   background-color: #f1f2f5;
   margin-right: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item .hero-button {
+.chefs .chefs-flex .chefs-cards .chef-card .chef-item-content .hero-button {
   font-size: 16px;
   max-width: 200px;
-  margin-bottom: 20px;
-  margin-top: 16px;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item-content h3 {
+.chefs .chefs-flex .chefs-cards .chef-item-content h3 {
   margin-bottom: 10px;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item-bottom {
+.chefs .chefs-flex .chefs-cards .chef-item-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
 }
 
-.chefs .chefs-flex .chefs-right .chef-item-bottom .MuiSvgIcon-root {
+.chefs .chefs-flex .chefs-cards .chef-item-bottom .MuiSvgIcon-root {
   color: #3d312d;
 }
 /*# sourceMappingURL=Chefs.css.map */

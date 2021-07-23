@@ -121,13 +121,13 @@ function LPMenu(props) {
                   Wheat pasta, mushrooms, cream, oregeno and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$17.00</p>
               </div>
             </div>
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=2")}
           >
             <div className="pastaitems">
               <div className="lp-menu-item-img">
@@ -138,10 +138,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Pasta with Shrimp
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Wheat pasta, tomatoes, basil and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
@@ -151,7 +151,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=3")}
           >
             <div className="pastaitems">
               <div className="lp-menu-item-img">
@@ -175,7 +175,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=4")}
           >
             <div className="pastaitems">
               <div className="lp-menu-item-img">
@@ -215,7 +215,7 @@ function LPMenu(props) {
         >
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=5")}
           >
             <div className="fishitems">
               <div className="lp-menu-item-img">
@@ -239,7 +239,31 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=6")}
+          >
+            <div className="fishitems">
+              <div className="lp-menu-item-img">
+                <img src={fish2} alt="pasta" />
+                <div className="menu-img-overlay">
+                  <button className="menu-img-overlay-button">View</button>
+                </div>
+              </div>
+              <div className="lp-menu-item-content">
+                <a href="#!" className="lp-menu-item-title">
+                  Penne Pasta
+                </a>
+                <p className="lp-menu-item-ingredients">
+                  Wheat pasta, mushrooms, cream, oregeno and butter
+                </p>
+                <p className="lp-menu-item-allergens">Gluten | Dairy</p>
+
+                <p className="lp-menu-item-price">$23.00</p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="lp-menu-item"
+            onClick={() => history.push("/MenuItem?ID=7")}
           >
             <div className="fishitems">
               <div className="lp-menu-item-img">
@@ -263,31 +287,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
-          >
-            <div className="fishitems">
-              <div className="lp-menu-item-img">
-                <img src={fish3} alt="pasta" />
-                <div className="menu-img-overlay">
-                  <button className="menu-img-overlay-button">View</button>
-                </div>
-              </div>
-              <div className="lp-menu-item-content">
-                <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
-                </a>
-                <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
-                </p>
-                <p className="lp-menu-item-allergens">Gluten | Dairy</p>
-
-                <p className="lp-menu-item-price">$23.00</p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=8")}
           >
             <div className="fishitems">
               <div className="lp-menu-item-img">
@@ -327,7 +327,7 @@ function LPMenu(props) {
         >
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=9")}
           >
             <div className="pizzaitems">
               <div className="lp-menu-item-img">
@@ -351,7 +351,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=10")}
           >
             <div className="pizzaitems">
               <div className="lp-menu-item-img">
@@ -375,7 +375,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=11")}
           >
             <div className="pizzaitems">
               <div className="lp-menu-item-img">
@@ -399,7 +399,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=12")}
           >
             <div className="pizzaitems">
               <div className="lp-menu-item-img">
@@ -439,7 +439,7 @@ function LPMenu(props) {
         >
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=13")}
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
@@ -463,7 +463,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=14")}
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
@@ -487,7 +487,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=15")}
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
@@ -511,7 +511,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=16")}
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
@@ -551,7 +551,7 @@ function LPMenu(props) {
         >
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=17")}
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
@@ -575,7 +575,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=18")}
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
@@ -599,7 +599,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=19")}
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
@@ -623,7 +623,7 @@ function LPMenu(props) {
           </div>
           <div
             className="lp-menu-item"
-            onClick={() => history.push("/MenuItem?ID=1")}
+            onClick={() => history.push("/MenuItem?ID=20")}
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
