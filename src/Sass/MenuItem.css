@@ -46,11 +46,14 @@
 
 .menu-item .menu-item-flex .menu-item-content h1 {
   font-size: 48px;
-  font-family: 'Allura', sans-serif;
+  font-family: "Allura", sans-serif;
   padding: 15px;
 }
 
-.menu-item .menu-item-flex .menu-item-content .food-description, .menu-item .menu-item-flex .menu-item-content .food-ingredients, .menu-item .menu-item-flex .menu-item-content .food-allergies, .menu-item .menu-item-flex .menu-item-content .food-price {
+.menu-item .menu-item-flex .menu-item-content .food-description,
+.menu-item .menu-item-flex .menu-item-content .food-ingredients,
+.menu-item .menu-item-flex .menu-item-content .food-allergies,
+.menu-item .menu-item-flex .menu-item-content .food-price {
   padding: 15px;
   font-size: 16px;
   color: #333;

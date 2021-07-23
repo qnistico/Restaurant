@@ -536,7 +536,7 @@ function LPMenu(props) {
         </div>
       </div>
       {/* coffee */}
-      <div className="lp-menu-items">
+      <div className="lp-menu-items" id="coffee-scroll">
         <h3
           className={`${
             !menuCategory || menuCategory == "coffee" ? "" : "menuItemHide"

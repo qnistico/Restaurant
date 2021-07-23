@@ -16,7 +16,7 @@ function CoffeeOverlay(props) {
             Try our delicious coffees, espressos and cappuccinos. All our coffee
             products are fair trade & organically sourced.
           </p>
-          <button className="hero-button">View Coffee Menu</button>
+          <a href="#coffee-scroll"><button className="hero-button">View Coffee Menu</button></a>
         </div>
       </div>
       </div>

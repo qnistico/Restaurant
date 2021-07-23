@@ -234,6 +234,10 @@
   display: none !important;
 }
 
+.lp-menu #coffee-scroll {
+  scroll-margin-top: 75px;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;

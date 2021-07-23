@@ -178,6 +178,9 @@
   .menuItemHide {
     display: none !important;
   }
+  #coffee-scroll {
+    scroll-margin-top: 75px;
+  }
 }
 
 @keyframes fadeIn {
