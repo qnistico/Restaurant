@@ -1,0 +1,17 @@
+.menu-page {
+    width: 100%;
+    .menu-page-hero {
+        width: 100%;
+        min-height: 62vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        h1 {
+            color: #fff;
+            font-size: 64px;
+            text-shadow: 2px 2px 4px black;
+
+        }
+    }
+}

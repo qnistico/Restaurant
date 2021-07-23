@@ -12,6 +12,7 @@ import LandingPage from "./LandingPage";
 import MenuItem from "./MenuItem";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
+import MenuPage from "./MenuPage";
 
 function App() {
   
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/MenuItem">
             <MenuItem />
+          </Route>
+          <Route exact path="/MenuPage">
+            <MenuPage />
           </Route>
           
         </Switch>
