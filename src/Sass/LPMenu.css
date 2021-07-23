@@ -6,6 +6,7 @@
 
 .lp-menu h2 {
   padding: 12px 30px;
+  border: 5px solid #261e1c;
 }
 
 .lp-menu .menu-buttons {
@@ -49,13 +50,14 @@
 
 .lp-menu .lp-menu-items h3 {
   padding-bottom: 40px;
-  font-family: 'Allura', sans-serif;
+  font-family: "Allura", sans-serif;
   font-size: 32px;
   color: #261e1c;
+  margin: 0;
 }
 
 .lp-menu .lp-menu-items h3::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 25px;
@@ -127,14 +129,6 @@
   cursor: pointer;
 }
 
-.lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay:hover {
-  opacity: 1;
-}
-
-.lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay:hover .menu-img-overlay-button {
-  bottom: 53px;
-}
-
 .lp-menu .lp-menu-items-flex .lp-menu-item .menu-img-overlay-button {
   width: 100px;
   height: 40px;
@@ -184,7 +178,7 @@
 
 .lp-menu .lp-menu-items-flex .lp-menu-item .lp-menu-item-title {
   font-size: 23px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   text-decoration: none;
   color: #111;
@@ -199,13 +193,34 @@
   font-weight: 700;
 }
 
-.lp-menu .pastaitems, .lp-menu .fishitems, .lp-menu .pizzaitems, .lp-menu .wineitems, .lp-menu .coffeeitems {
+.lp-menu .pastaitems,
+.lp-menu .fishitems,
+.lp-menu .pizzaitems,
+.lp-menu .wineitems,
+.lp-menu .coffeeitems {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+.lp-menu .pastaitems:hover .menu-img-overlay,
+.lp-menu .fishitems:hover .menu-img-overlay,
+.lp-menu .pizzaitems:hover .menu-img-overlay,
+.lp-menu .wineitems:hover .menu-img-overlay,
+.lp-menu .coffeeitems:hover .menu-img-overlay {
+  opacity: 1;
+}
+
+.lp-menu .pastaitems:hover .menu-img-overlay-button,
+.lp-menu .fishitems:hover .menu-img-overlay-button,
+.lp-menu .pizzaitems:hover .menu-img-overlay-button,
+.lp-menu .wineitems:hover .menu-img-overlay-button,
+.lp-menu .coffeeitems:hover .menu-img-overlay-button {
+  bottom: 53px;
 }
 
 .lp-menu .menuButtonActive {
