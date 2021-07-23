@@ -14,7 +14,6 @@ function Hero(props) {
   const ParallaxContainer = () => (
     <Parallax bgImage={herobg} bgImageAlt="restaurant" strength={300}>
       <div className="hero">
-        <div className="hero-gradient"></div>
         <div className="hero-content">
           <h1>Authentic Italian Cuisine</h1>
           <p>Italian cuisine cooked to perfection</p>

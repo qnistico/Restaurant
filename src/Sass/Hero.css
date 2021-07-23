@@ -15,21 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
-}
-
-.hero .hero-gradient {
-  width: 100%;
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  position: absolute;
-}
-
-.hero img {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  left: 0;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .hero .hero-content {

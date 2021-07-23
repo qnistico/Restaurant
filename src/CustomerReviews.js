@@ -25,7 +25,7 @@ function CustomerReviews() {
       bgImageAlt="people eating in a restaurant"
       strength={300}
     >
-            <div className="parallax-overlay-gradient"></div>
+      <div className="customer-reviews">
 
 
 <Slider {...settings}>
@@ -69,6 +69,7 @@ function CustomerReviews() {
     </div>
   </div>
 </Slider>
+</div>
 </Parallax>
     
   );

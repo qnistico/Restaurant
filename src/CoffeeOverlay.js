@@ -10,7 +10,6 @@ function CoffeeOverlay(props) {
   const ParallaxContainer = () => (
     <Parallax bgImage={coffee} bgImageAlt="coffee" strength={300}>
       <div className="coffee-overlay">
-        <div className="coffee-overlay-gradient"></div>
         <div className="coffee-overlay-flex">
           <div className="coffee-overlay-content">
             <h2>Premium Organic Coffee & Espresso</h2>
