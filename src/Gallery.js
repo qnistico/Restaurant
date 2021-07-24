@@ -39,7 +39,7 @@ function Gallery() {
     { id: "13", imageName: wine1, tag: "Wine" },
     { id: "14", imageName: coffee1, tag: "Coffee" },
   ];
-  const [tag, setTag] = useState("all");
+  const [tag, setTag] = useState("All");
   const [filteredImages, setFilteredImages] = useState([]);
   useEffect(() => {
     tag === "All"
