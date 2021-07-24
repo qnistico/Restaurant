@@ -21,7 +21,7 @@ function Hero(props) {
         <div className="hero-content">
           <h1>Authentic Italian Cuisine</h1>
           <p>Italian cuisine cooked to perfection</p>
-          <button onClick={() => history.push("/MenuPage")} className="hero-button">View Menu</button>
+          <a href="/MenuPage"><button className="hero-button">View Menu</button></a>
         </div>
       </div>
     </Parallax>

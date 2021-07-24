@@ -4,7 +4,7 @@
 
 .menu-page .menu-page-hero {
   width: 100%;
-  min-height: 62vh;
+  height: 62vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

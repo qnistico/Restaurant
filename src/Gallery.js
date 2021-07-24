@@ -20,7 +20,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 function Gallery() {
   const options = {
     settings: {
-      overlayColor: "black"
+      slideAnimationType: "both",
     },
   };
   const images = [

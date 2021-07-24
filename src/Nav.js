@@ -40,15 +40,9 @@ function Nav() {
               </a>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/MenuPage"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
+                <a href="/MenuPage" className="nav-links">
                   Menu
-                </NavLink>
+                  </a>
               </li>
               <li className="nav-item">
                 <NavLink

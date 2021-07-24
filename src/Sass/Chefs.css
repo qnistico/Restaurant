@@ -31,7 +31,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 30px;
 }
 
 .chefs .chefs-flex .chefs-top h3 {
@@ -66,7 +65,7 @@
           justify-content: center;
   width: 100%;
   max-width: 1400px;
-  margin: 40px auto;
+  margin: 28px auto 0 auto;
 }
 
 .chefs .chefs-flex .chefs-cards .chef-card {

@@ -2,7 +2,7 @@
     width: 100%;
     .menu-page-hero {
         width: 100%;
-        min-height: 62vh;
+        height: 62vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,5 +13,6 @@
             text-shadow: 2px 2px 4px black;
 
         }
+        
     }
 }
