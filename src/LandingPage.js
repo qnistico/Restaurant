@@ -7,12 +7,16 @@ import CustomerReviews from "./CustomerReviews";
 import FoodShowcase from "./FoodShowcase";
 import Hero from "./Hero";
 import LPMenu from "./LPMenu";
+import ScrollToTop from "./ScrollToTop";
+
 
 function LandingPage(props) {
+  
   const [menuCategory, setMenuCategory] = useState(false);
 
   return (
     <div className="landing-page">
+      <ScrollToTop />
       <Hero />
       <About />
       <LPMenu menuCategory={menuCategory} setMenuCategory={setMenuCategory} />

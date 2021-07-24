@@ -7,6 +7,8 @@ import { useParams } from "react-router";
 import "./Sass/ChefProfile.scss";
 import { Parallax } from "react-parallax";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 function ChefProfile(props) {
   const history = useHistory();
@@ -43,6 +45,7 @@ function ChefProfile(props) {
   );
   return (
     <div className="chef-profile">
+        <Fade duration="1210">
       {ParallaxContainer()}
       <div className="chef-profile-flex">
         <div className="chef-left">
@@ -126,36 +129,40 @@ function ChefProfile(props) {
         <div className="chef-sidebar">
           <div className="chef-sidebar-item">
             <div className="chef-sidebar-profile">
+                <a href="/ChefProfile?ID=1">
               <img
                 src={chef1}
                 alt="chef"
-                onClick={() => history.push("/ChefProfile?ID=1")}
               />
+              </a>
               <p>Chef</p>
             </div>
           </div>
           <div className="chef-sidebar-item">
             <div className="chef-sidebar-profile">
+                <a href="/ChefProfile?ID=2">
               <img
                 src={chef2}
                 alt="chef"
-                onClick={() => history.push("/ChefProfile?ID=2")}
               />
+              </a>
               <p>Chef</p>
             </div>
           </div>
           <div className="chef-sidebar-item">
             <div className="chef-sidebar-profile">
+                <a href="/ChefProfile?ID=3">
               <img
                 src={chef3}
                 alt="chef"
-                onClick={() => history.push("/ChefProfile?ID=3")}
               />
+              </a>
               <p>Chef</p>
             </div>
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

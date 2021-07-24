@@ -15,6 +15,8 @@ import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";
 import wine1 from "./img/wine1.jpg";
 import coffee1 from "./img/coffee.jpg";
+import Fade from "react-reveal/Fade";
+
 
 function MenuItem(props) {
   const { handle } = useParams();
@@ -146,6 +148,8 @@ function MenuItem(props) {
   const foodItem = menuData.find((food) => food.foodID == foodID);
   return (
     <div className="menu-item">
+          <Fade duration="1210">
+
       <div className="menu-item-flex">
 
         <div className="menu-item-content">
@@ -168,6 +172,7 @@ function MenuItem(props) {
           </p>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

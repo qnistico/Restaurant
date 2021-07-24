@@ -25,11 +25,13 @@ function Chefs(props) {
         </div>
         <div className="chefs-cards">
           <div className="chef-card">
+            <div className="chef-card-img">
             <img
               src={chef1}
               alt="chef"
               onClick={() => history.push("/ChefProfile?ID=1")}
             />
+            </div>
             <div className="chef-item-content">
               <h3>Chef Ricardo Ramiro</h3>
               <p>
@@ -52,11 +54,14 @@ function Chefs(props) {
             </div>
           </div>
           <div className="chef-card">
+          <div className="chef-card-img">
+
             <img
               src={chef2}
               alt="chef"
               onClick={() => history.push("/ChefProfile?ID=2")}
             />
+            </div>
             <div className="chef-item-content">
               <h3>Chef Marco Spezzani</h3>
               <p>
@@ -79,11 +84,14 @@ function Chefs(props) {
             </div>
           </div>
           <div className="chef-card ">
+          <div className="chef-card-img">
+
             <img
               src={chef3}
               alt="chef"
               onClick={() => history.push("/ChefProfile?ID=3")}
             />
+            </div>
             <div className="chef-item-content">
               <h3>Chef Maria Roletto</h3>
               <p>

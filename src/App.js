@@ -14,6 +14,9 @@ import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 import MenuPage from "./MenuPage";
 import ChefProfile from "./ChefProfile";
+import Gallery from "./Gallery";
+import SimpleReactLightbox from "simple-react-lightbox";
+
 
 function App() {
   
@@ -36,6 +39,12 @@ function App() {
           </Route>
           <Route exact path="/ChefProfile">
             <ChefProfile />
+          </Route>
+          
+          <Route exact path="/Gallery">
+            <SimpleReactLightbox>
+            <Gallery />
+            </SimpleReactLightbox>
           </Route>
           
         </Switch>

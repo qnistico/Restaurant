@@ -25,6 +25,8 @@
   display: -ms-flexbox;
   display: flex;
   padding: 60px 30px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .chef-profile .chef-profile-flex .chef-left {
@@ -32,8 +34,8 @@
   height: 100%;
   padding: 30px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.158);
-          box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.158);
+  -webkit-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid #d9d9d9;
   margin-right: 15px;
 }
@@ -79,8 +81,14 @@
 }
 
 .chef-profile .chef-profile-flex .chef-left form .form-group-flex input {
-  width: 30.9vw;
-  margin: auto;
+  width: 100%;
+}
+
+.chef-profile .chef-profile-flex .chef-left form .form-group {
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .chef-profile .chef-profile-flex .chef-left form .form-group input {
@@ -94,11 +102,12 @@
   height: 300px;
   padding: 10px;
   margin-top: 30px;
+  outline: none;
   border: 1px solid #c5c5c5;
 }
 
 .chef-profile .chef-profile-flex .chef-sidebar {
-  width: 38%;
+  width: 45%;
   height: 100%;
   margin-left: 15px;
 }
@@ -125,8 +134,8 @@
 }
 
 .chef-profile .chef-profile-flex .chef-sidebar .chef-sidebar-item img {
-  width: 140px;
-  height: 140px;
+  width: 125px;
+  height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100px;

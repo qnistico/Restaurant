@@ -1,0 +1,30 @@
+.gallery {
+  padding: 100px 0;
+  .gallery-grid {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .gallery-img-container {
+
+  }
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery-buttons {
+      text-align: center;
+      padding: 20px 0;
+  }
+  .gallery-buttons button {
+      width: 125px;
+      background-color: #261e1c;
+      color: #e0bc75;
+      padding: 12px 20px;
+      margin-right: 10px;
+      border-color: #261e1c;
+  }
+}

@@ -7,11 +7,15 @@ import "./Sass/Hero.scss";
 import herobg from "./img/herobg.jpg";
 import { Parallax } from "react-parallax";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 
 function Hero(props) {
   const history = useHistory();
   const ParallaxContainer = () => (
+    <Fade duration="1210">
+
     <Parallax bgImage={herobg} bgImageAlt="restaurant" strength={300}>
       <div className="hero">
         <div className="hero-content">
@@ -21,6 +25,7 @@ function Hero(props) {
         </div>
       </div>
     </Parallax>
+    </Fade>
   );
   return <div>
     {ParallaxContainer()}

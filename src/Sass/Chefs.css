@@ -85,11 +85,25 @@
   margin: 15px;
 }
 
+.chefs .chefs-flex .chefs-cards .chef-card .chef-card-img {
+  width: 100%;
+  max-height: 270px;
+  overflow: hidden;
+}
+
 .chefs .chefs-flex .chefs-cards .chef-card img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
+}
+
+.chefs .chefs-flex .chefs-cards .chef-card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 75%;
 }
 
 .chefs .chefs-flex .chefs-cards .chef-card .chef-item-content {

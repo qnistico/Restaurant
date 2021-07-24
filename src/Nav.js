@@ -35,14 +35,14 @@ function Nav() {
       <>
         <nav className="navbar" id="navbar">
           <div className="nav-container">
-            <a href="/" className="nav-logo"> 
-              <img src={logo} alt="logo" />
+            <a href="/">
+              <img src={logo} alt="logo" className="nav-logo" />
               </a>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <NavLink
                   exact
-                  to="/Menu"
+                  to="/MenuPage"
                   activeClassName="active"
                   className="nav-links"
                   onClick={handleClick}

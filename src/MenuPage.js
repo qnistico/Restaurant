@@ -3,6 +3,8 @@ import LPMenu from './LPMenu';
 import "./Sass/MenuPage.scss";
 import { Parallax } from "react-parallax";
 import herobg from "./img/herobg.jpg";
+import Fade from "react-reveal/Fade";
+
 
 
 function MenuPage(props) {
@@ -21,8 +23,10 @@ function MenuPage(props) {
 
     return (
         <div className="menu-page">
+            <Fade duration="1210">
             {ParallaxContainer()}
             <LPMenu menuCategory={menuCategory} setMenuCategory={setMenuCategory}/>
+            </Fade>
         </div>
     )
 }
