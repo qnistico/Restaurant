@@ -7,8 +7,10 @@ import chef2 from "./img/chef2.jpg";
 import chef3 from "./img/chef3.jpg";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import { useHistory } from "react-router-dom";
 
-function Chefs() {
+function Chefs(props) {
+  const history = useHistory();
   return (
     <div className="chefs">
       <div className="chefs-flex">
@@ -23,7 +25,11 @@ function Chefs() {
         </div>
         <div className="chefs-cards">
           <div className="chef-card">
-            <img src={chef1} alt="" />
+            <img
+              src={chef1}
+              alt="chef"
+              onClick={() => history.push("/ChefProfile?ID=1")}
+            />
             <div className="chef-item-content">
               <h3>Chef Ricardo Ramiro</h3>
               <p>
@@ -32,7 +38,12 @@ function Chefs() {
                 Tempus quam pellentesque nec nam.{" "}
               </p>
               <div className="chef-item-bottom">
-                <button className="hero-button">View Profile</button>
+                <button
+                  className="hero-button"
+                  onClick={() => history.push("/ChefProfile?ID=1")}
+                >
+                  View Profile
+                </button>
                 <div>
                   <FacebookIcon />
                   <TwitterIcon />
@@ -41,7 +52,11 @@ function Chefs() {
             </div>
           </div>
           <div className="chef-card">
-            <img src={chef2} alt="" />
+            <img
+              src={chef2}
+              alt="chef"
+              onClick={() => history.push("/ChefProfile?ID=2")}
+            />
             <div className="chef-item-content">
               <h3>Chef Marco Spezzani</h3>
               <p>
@@ -50,7 +65,12 @@ function Chefs() {
                 Tempus quam pellentesque nec nam.{" "}
               </p>
               <div className="chef-item-bottom">
-                <button className="hero-button">View Profile</button>
+                <button
+                  className="hero-button"
+                  onClick={() => history.push("/ChefProfile?ID=2")}
+                >
+                  View Profile
+                </button>
                 <div>
                   <FacebookIcon />
                   <TwitterIcon />
@@ -59,7 +79,11 @@ function Chefs() {
             </div>
           </div>
           <div className="chef-card ">
-            <img src={chef3} alt="" />
+            <img
+              src={chef3}
+              alt="chef"
+              onClick={() => history.push("/ChefProfile?ID=3")}
+            />
             <div className="chef-item-content">
               <h3>Chef Maria Roletto</h3>
               <p>
@@ -68,7 +92,12 @@ function Chefs() {
                 Tempus quam pellentesque nec nam.{" "}
               </p>
               <div className="chef-item-bottom">
-                <button className="hero-button">View Profile</button>
+                <button
+                  className="hero-button"
+                  onClick={() => history.push("/ChefProfile?ID=3")}
+                >
+                  View Profile
+                </button>
                 <div>
                   <FacebookIcon />
                   <TwitterIcon />

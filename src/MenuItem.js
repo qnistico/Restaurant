@@ -147,6 +147,7 @@ function MenuItem(props) {
   return (
     <div className="menu-item">
       <div className="menu-item-flex">
+
         <div className="menu-item-content">
           <img src={foodItem.foodimg} alt={foodItem.foodalt} />
           <h1 className="food-title">{foodItem.foodtitle}</h1>

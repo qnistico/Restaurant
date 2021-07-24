@@ -13,6 +13,7 @@ import MenuItem from "./MenuItem";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 import MenuPage from "./MenuPage";
+import ChefProfile from "./ChefProfile";
 
 function App() {
   
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/MenuPage">
             <MenuPage />
+          </Route>
+          <Route exact path="/ChefProfile">
+            <ChefProfile />
           </Route>
           
         </Switch>
