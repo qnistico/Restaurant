@@ -13,7 +13,6 @@ import fish1 from "./img/fish1.jpg";
 import fish2 from "./img/fish2.jpg";
 import fish3 from "./img/fish3.jpg";
 import fish4 from "./img/fish4.jpg";
-import herobg5 from "./img/herobg5.jpg";
 import SingleCard from "./SingleCard";
 
 function About(props) {

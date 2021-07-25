@@ -5,16 +5,22 @@ import pasta1 from "./img/pasta1.jpg";
 import pasta2 from "./img/pasta2.jpg";
 import pasta3 from "./img/pasta3.jpg";
 import pasta4 from "./img/pasta4.jpg";
-import fish1 from "./img/fish1.jpg";
-import fish2 from "./img/fish2.jpg";
-import fish3 from "./img/fish3.jpg";
-import fish4 from "./img/fish4.jpg";
 import pizza1 from "./img/pizza1.jpg";
 import pizza2 from "./img/pizza2.jpg";
 import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";
+import fish1 from "./img/fish1.jpg";
+import fish2 from "./img/fish2.jpg";
+import fish3 from "./img/fish3.jpg";
+import fish4 from "./img/fish4.jpg";
 import wine1 from "./img/wine1.jpg";
+import wine2 from "./img/wine2.jpg";
+import wine3 from "./img/wine3.jpg";
+import wine4 from "./img/wine4.jpg";
 import coffee1 from "./img/coffee.jpg";
+import coffee2 from "./img/coffee2.jpg";
+import coffee3 from "./img/coffee3.jpg";
+import coffee4 from "./img/coffee4.jpg";
 import Fade from "react-reveal/Fade";
 
 
@@ -142,6 +148,86 @@ function MenuItem(props) {
       foodallergens: "pintobeans",
       foodprice: "pintobeans",
       foodID: "12",
+    },
+    {
+      foodimg: wine1,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "13",
+    },
+    {
+      foodimg: wine2,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "14",
+    },
+    {
+      foodimg: wine3,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "15",
+    },
+    {
+      foodimg: wine4,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "16",
+    },
+    {
+      foodimg: coffee1,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "17",
+    },
+    {
+      foodimg: coffee2,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "18",
+    },
+    {
+      foodimg: coffee3,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "19",
+    },
+    {
+      foodimg: coffee4,
+      foodalt: "pintobeans",
+      foodtitle: "pintobeans",
+      fooddescription: "pintobeans",
+      foodingredients: "pintobeans",
+      foodallergens: "pintobeans",
+      foodprice: "pintobeans",
+      foodID: "20",
     },
   ];
   var foodID = new URLSearchParams(window.location.search).get("ID");

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Sass/LPMenu.scss";
-import coffee1 from "./img/coffee.jpg";
 import pasta1 from "./img/pasta1.jpg";
 import pasta2 from "./img/pasta2.jpg";
 import pasta3 from "./img/pasta3.jpg";
@@ -9,11 +8,20 @@ import pizza1 from "./img/pizza1.jpg";
 import pizza2 from "./img/pizza2.jpg";
 import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";
-import wine1 from "./img/wine1.jpg";
 import fish1 from "./img/fish1.jpg";
 import fish2 from "./img/fish2.jpg";
 import fish3 from "./img/fish3.jpg";
 import fish4 from "./img/fish4.jpg";
+import wine1 from "./img/wine1.jpg";
+import wine2 from "./img/wine2.jpg";
+import wine3 from "./img/wine3.jpg";
+import wine4 from "./img/wine4.jpg";
+import coffee1 from "./img/coffee.jpg";
+import coffee2 from "./img/coffee2.jpg";
+import coffee3 from "./img/coffee3.jpg";
+import coffee4 from "./img/coffee4.jpg";
+
+
 import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -467,7 +475,7 @@ function LPMenu(props) {
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
-                <img src={wine1} alt="pasta" />
+                <img src={wine2} alt="pasta" />
                 <div className="menu-img-overlay">
                   <button className="menu-img-overlay-button">View</button>
                 </div>
@@ -491,7 +499,7 @@ function LPMenu(props) {
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
-                <img src={wine1} alt="pasta" />
+                <img src={wine3} alt="pasta" />
                 <div className="menu-img-overlay">
                   <button className="menu-img-overlay-button">View</button>
                 </div>
@@ -515,7 +523,7 @@ function LPMenu(props) {
           >
             <div className="wineitems">
               <div className="lp-menu-item-img">
-                <img src={wine1} alt="pasta" />
+                <img src={wine4} alt="pasta" />
                 <div className="menu-img-overlay">
                   <button className="menu-img-overlay-button">View</button>
                 </div>
@@ -579,7 +587,7 @@ function LPMenu(props) {
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
-                <img src={coffee1} alt="pasta" />
+                <img src={coffee2} alt="pasta" />
                 <div className="menu-img-overlay">
                   <button className="menu-img-overlay-button">View</button>
                 </div>
@@ -603,7 +611,7 @@ function LPMenu(props) {
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
-                <img src={coffee1} alt="pasta" />
+                <img src={coffee3} alt="pasta" />
                 <div className="menu-img-overlay">
                   <button className="menu-img-overlay-button">View</button>
                 </div>
@@ -627,7 +635,7 @@ function LPMenu(props) {
           >
             <div className="coffeeitems">
               <div className="lp-menu-item-img">
-                <img src={coffee1} alt="pasta" />
+                <img src={coffee4} alt="pasta" />
                 <div className="menu-img-overlay">
                   <button className="menu-img-overlay-button">View</button>
                 </div>
