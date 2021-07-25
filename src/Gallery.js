@@ -7,12 +7,18 @@ import pizza1 from "./img/pizza1.jpg";
 import pizza2 from "./img/pizza2.jpg";
 import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";
-import wine1 from "./img/wine1.jpg";
 import fish1 from "./img/fish1.jpg";
 import fish2 from "./img/fish2.jpg";
 import fish3 from "./img/fish3.jpg";
 import fish4 from "./img/fish4.jpg";
+import wine1 from "./img/wine1.jpg";
+import wine2 from "./img/wine2.jpg";
+import wine3 from "./img/wine3.jpg";
+import wine4 from "./img/wine4.jpg";
 import coffee1 from "./img/coffee.jpg";
+import coffee2 from "./img/coffee2.jpg";
+import coffee3 from "./img/coffee3.jpg";
+import coffee4 from "./img/coffee4.jpg";
 import "./Sass/Gallery.scss";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
@@ -38,7 +44,13 @@ function Gallery() {
     { id: "11", imageName: pizza3, tag: "Pizza" },
     { id: "12", imageName: pizza4, tag: "Pizza" },
     { id: "13", imageName: wine1, tag: "Wine" },
+    { id: "13", imageName: wine2, tag: "Wine" },
+    { id: "13", imageName: wine3, tag: "Wine" },
+    { id: "13", imageName: wine4, tag: "Wine" },
     { id: "14", imageName: coffee1, tag: "Coffee" },
+    { id: "14", imageName: coffee2, tag: "Coffee" },
+    { id: "14", imageName: coffee3, tag: "Coffee" },
+    { id: "14", imageName: coffee4, tag: "Coffee" },
   ];
   const [tag, setTag] = useState("All");
   const [filteredImages, setFilteredImages] = useState([]);
@@ -49,31 +61,31 @@ function Gallery() {
   }, [tag]);
   return (
     <Fade duration="1210">
-    <div className="gallery" handleSetTag={setTag}>
-      <div className="gallery-buttons">
-        <TagButton name="All" handleSetTag={setTag} />
-        <TagButton name="Pasta" handleSetTag={setTag} />
-        <TagButton name="Fish" handleSetTag={setTag} />
-        <TagButton name="Pizza" handleSetTag={setTag} />
-        <TagButton name="Wine" handleSetTag={setTag} />
-        <TagButton name="Coffee" handleSetTag={setTag} />
-      </div>
-      <SRLWrapper options={options}>
-        <div className="gallery-grid">
-          {filteredImages.map((image) => (
-            <div key={image.id} className="gallery-img-container">
-              <a href={`${image.imageName}`}>
-                <img
-                  src={`${image.imageName}`}
-                  alt=""
-                  className="gallery-img"
-                />
-              </a>
-            </div>
-          ))}
+      <div className="gallery" handleSetTag={setTag}>
+        <div className="gallery-buttons">
+          <TagButton name="All" handleSetTag={setTag} />
+          <TagButton name="Pasta" handleSetTag={setTag} />
+          <TagButton name="Fish" handleSetTag={setTag} />
+          <TagButton name="Pizza" handleSetTag={setTag} />
+          <TagButton name="Wine" handleSetTag={setTag} />
+          <TagButton name="Coffee" handleSetTag={setTag} />
         </div>
-      </SRLWrapper>
-    </div>
+        <SRLWrapper options={options}>
+          <div className="gallery-grid">
+            {filteredImages.map((image) => (
+              <div key={image.id} className="gallery-img-container">
+                <a href={`${image.imageName}`}>
+                  <img
+                    src={`${image.imageName}`}
+                    alt=""
+                    className="gallery-img"
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
+        </SRLWrapper>
+      </div>
     </Fade>
   );
 }

@@ -74,15 +74,9 @@ function Nav() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/Blog"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
+                <a href="/ContactPage" className="nav-links">
                   Contact Us
-                </NavLink>
+                  </a>
               </li>
               <li className="nav-item mobile_show">
                 <a className="nav-links reservations_mobile" href="/Reservations">

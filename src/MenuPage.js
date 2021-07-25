@@ -10,15 +10,16 @@ import Fade from "react-reveal/Fade";
 function MenuPage(props) {
     const [menuCategory, setMenuCategory] = useState(false);
     const ParallaxContainer = () => (
-        <Parallax bgImage={herobg} bgImageAlt="restaurant" strength={300}>
-            <div className="menu-page">
+        <div className="menu-page">
+
+        <Parallax bgImage={herobg} bgImageAlt="restaurant" strength={300} className="wtf">
           <div className="menu-page-hero">
                 <div className="menu-page-hero-content">
 <h1>Menu</h1>
                 </div>
             </div>
-            </div>
         </Parallax>
+        </div>
     );
 
     return (
