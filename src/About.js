@@ -21,7 +21,7 @@ function About(props) {
     <div className="about">
       <div className="about-top">
         <p className="about-header">Welcome to Avellino's</p>
-        <h2>We are a modern Italian restaurant in Somewhere</h2>
+        <h2>We are a modern Italian restaurant in Philadelphia</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -35,7 +35,7 @@ function About(props) {
         <a href="/Gallery">
 
           <div className="lp-gallery-overlay">
-              <button>View Gallery</button>
+              <button className="lp-gallery-button">View Gallery</button>
           </div>
           </a>
           <img src={pizza4} alt="" />

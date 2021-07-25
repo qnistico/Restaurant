@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  padding: 60px 0;
+  padding-top: 60px;
   background-color: #f1f2f5;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .about .about-top p {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: #4d4d4d;
 }
 
@@ -73,19 +73,60 @@
           align-items: center;
 }
 
-.about .lp-gallery .lp-gallery-flex .lp-gallery-overlay button {
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button {
   font-size: 20px;
   font-weight: 700;
   position: absolute;
   padding: 20px 40px;
   background-color: #e0bc75;
   border: 1px solid #261e1c;
+  -webkit-transition: all 0.618s ease;
+  transition: all 0.618s ease;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  overflow: hidden;
   cursor: pointer;
+}
+
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#261e1c), to(#261e1c));
+  background: linear-gradient(to right, #261e1c, #261e1c);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.38s ease;
+  transition: all 0.38s ease;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button:hover:before,
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button:focus:before,
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button:active:before {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button:hover,
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button:focus,
+.about .lp-gallery .lp-gallery-flex .lp-gallery-button:active {
+  background-color: #261e1c;
+  color: #e0bc75;
 }
 
 .about .lp-gallery .lp-gallery-flex img {
   width: 25%;
-  height: 20vw;
+  height: 19vw;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0;
