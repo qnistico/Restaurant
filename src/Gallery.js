@@ -3,7 +3,7 @@ import pasta1 from "./img/pasta1.jpg";
 import pasta2 from "./img/pasta2.jpg";
 import pasta3 from "./img/pasta3.jpg";
 import pasta4 from "./img/pasta4.jpg";
-import pizza1 from "./img/margaritapizza.jpg";
+import pizza1 from "./img/pizza1.jpg";
 import pizza2 from "./img/pizza2.jpg";
 import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";
@@ -16,6 +16,7 @@ import coffee1 from "./img/coffee.jpg";
 import "./Sass/Gallery.scss";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
+import { Fade } from "react-reveal";
 
 function Gallery() {
   const options = {
@@ -47,6 +48,7 @@ function Gallery() {
       : setFilteredImages(images.filter((image) => image.tag === tag));
   }, [tag]);
   return (
+    <Fade duration="1210">
     <div className="gallery" handleSetTag={setTag}>
       <div className="gallery-buttons">
         <TagButton name="All" handleSetTag={setTag} />
@@ -72,6 +74,7 @@ function Gallery() {
         </div>
       </SRLWrapper>
     </div>
+    </Fade>
   );
 }
 

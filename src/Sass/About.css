@@ -4,69 +4,94 @@
   background-color: #f1f2f5;
 }
 
-.about .about-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1400px;
+.about .about-top {
+  line-height: 1.618;
+  text-align: center;
+  max-width: 1000px;
   margin: auto;
 }
 
-.about .about-flex .about-left {
-  width: 68%;
-  line-height: 1.618;
-  margin-right: 30px;
-}
-
-.about .about-flex .about-left .about-header {
-  font-size: 32px;
-  font-family: 'Allura', sans-serif;
+.about .about-top .about-header {
+  font-size: 40px;
+  font-family: "Allura", sans-serif;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: #9e8746;
 }
 
-.about .about-flex .about-left h2 {
+.about .about-top h2 {
   font-size: 40px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 20px;
 }
 
-.about .about-flex .about-left p {
+.about .about-top p {
   margin-bottom: 40px;
   color: #4d4d4d;
 }
 
-.about .about-flex .about-left img {
+.about .about-top img {
   width: 100%;
   -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.158);
           box-shadow: 0 12px 40px rgba(0, 0, 0, 0.158);
 }
 
-.about .about-right {
-  width: 34%;
+.about .lp-gallery .lp-gallery-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 30px;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.about .about-right h2 {
-  margin-bottom: 20px;
-  color: #9e8746;
-  font-family: 'Allura', sans-serif;
-}
-
-.about .about-right img {
+.about .lp-gallery .lp-gallery-flex .lp-gallery-overlay {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.62);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .lp-gallery .lp-gallery-flex .lp-gallery-overlay button {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  padding: 20px 40px;
+  background-color: #e0bc75;
+  border: 1px solid #261e1c;
+  cursor: pointer;
+}
+
+.about .lp-gallery .lp-gallery-flex img {
+  width: 25%;
+  height: 20vw;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0;
+}
+
+.about .lp-gallery-flex:hover .lp-gallery-overlay {
+  opacity: 1;
 }
 /*# sourceMappingURL=About.css.map */

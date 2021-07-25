@@ -9,7 +9,7 @@ import fish1 from "./img/fish1.jpg";
 import fish2 from "./img/fish2.jpg";
 import fish3 from "./img/fish3.jpg";
 import fish4 from "./img/fish4.jpg";
-import pizza1 from "./img/margaritapizza.jpg";
+import pizza1 from "./img/pizza1.jpg";
 import pizza2 from "./img/pizza2.jpg";
 import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";

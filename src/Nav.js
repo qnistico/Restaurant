@@ -56,15 +56,9 @@ function Nav() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/Gallery"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
+                <a href="/Gallery" className="nav-links">
                   Gallery
-                </NavLink>
+                  </a>
               </li>
               
               

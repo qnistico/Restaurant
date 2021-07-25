@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutimg1 from "./img/aboutimg1.jpg";
 import aboutsidebarimg from "./img/aboutsidebarimg.jpg";
-import margaritapizza from "./img/margaritapizza.jpg";
+import margaritapizza from "./img/pizza1.jpg";
 import "./Sass/SingleCard.scss";
 
 function SingleCard(props) {

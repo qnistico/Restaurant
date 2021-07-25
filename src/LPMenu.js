@@ -5,7 +5,7 @@ import pasta1 from "./img/pasta1.jpg";
 import pasta2 from "./img/pasta2.jpg";
 import pasta3 from "./img/pasta3.jpg";
 import pasta4 from "./img/pasta4.jpg";
-import pizza1 from "./img/margaritapizza.jpg";
+import pizza1 from "./img/pizza1.jpg";
 import pizza2 from "./img/pizza2.jpg";
 import pizza3 from "./img/pizza3.jpg";
 import pizza4 from "./img/pizza4.jpg";
