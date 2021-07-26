@@ -5,9 +5,11 @@ import chef3 from "./img/chef3.jpg";
 import chefprofilebg from "./img/chefprofilebg.jpg";
 import { useParams } from "react-router";
 import "./Sass/ChefProfile.scss";
-import { Parallax } from "react-parallax";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { ParallaxProvider } from "react-scroll-parallax";
+import PagesHero from "./PagesHero";
+
 
 
 function ChefProfile(props) {
@@ -34,19 +36,11 @@ function ChefProfile(props) {
   var chefID = new URLSearchParams(window.location.search).get("ID");
   const chefItem = chefDetails.find((chef) => chef.chefID == chefID);
 
-  const ParallaxContainer = () => (
-    <Parallax bgImage={chefprofilebg} bgImageAlt="restaurant" strength={300}>
-      <div className="chef-hero">
-        <div className="chef-hero-content">
-          <h1>Chefs</h1>
-        </div>
-      </div>
-    </Parallax>
-  );
+  
   return (
     <div className="chef-profile">
         <Fade duration="1210">
-      {ParallaxContainer()}
+          <PagesHero phimg={chefprofilebg} phheader="Chefs" />
       <div className="chef-profile-flex">
         <div className="chef-left">
           <div className="chef-top">

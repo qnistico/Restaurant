@@ -237,6 +237,9 @@ function MenuItem(props) {
           <Fade duration="1210">
 
       <div className="menu-item-flex">
+        <div className="button-flex">
+      <h2 className="hero-button"><a href="/MenuPage" >Back to Menu</a></h2>
+      </div>
 
         <div className="menu-item-content">
           <img src={foodItem.foodimg} alt={foodItem.foodalt} />

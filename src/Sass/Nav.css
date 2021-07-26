@@ -1,3 +1,54 @@
+.topnav {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  background-color: #261e1c;
+  z-index: 5;
+  border-bottom: 1px solid #4e411d;
+}
+
+.topnav .topnav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.topnav .topnav-flex .topnav-flex-item {
+  color: #f1f2f5;
+  padding: 7px 20px 8px 0;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav .topnav-flex .topnav-flex-item .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #e0bc75;
+}
+
+.topnav .topnav-flex .topnav-social .MuiSvgIcon-root {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
 .navbar {
   background-color: transparent;
   height: 75px;
@@ -11,7 +62,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
+  top: 35px;
   height: 75px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -102,7 +153,7 @@
 }
 
 .reservations {
-  color: #ad985f !important;
+  color: #e0bc75 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +168,7 @@
   font-size: 40px;
 }
 
-.fix_nav {
+.fix-nav {
   position: fixed;
   background-color: #261e1c;
   height: 60px;
@@ -129,7 +180,7 @@
   top: 0;
 }
 
-.fix_nav .nav-links {
+.fix-nav .nav-links {
   color: #e0bc75 !important;
 }
 
@@ -322,6 +373,15 @@
     font-size: 32px;
     cursor: pointer;
     color: white;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .topnav {
+    display: none;
+  }
+  .navbar {
+    top: 0;
   }
 }
 /*# sourceMappingURL=Nav.css.map */

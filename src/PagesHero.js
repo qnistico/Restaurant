@@ -7,7 +7,7 @@ function PagesHero(props) {
   return (
     <div className="pages-hero">
       <ParallaxProvider>
-        <Parallax1 imgsrc={props.phimg} height="75vh"></Parallax1>
+        <Parallax1 imgsrc={props.phimg} height="62vh"></Parallax1>
       </ParallaxProvider>
       <div className="pages-hero-content">
         <h1>{props.phheader}</h1>

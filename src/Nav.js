@@ -5,6 +5,17 @@ import { useHistory } from "react-router-dom";
 import "./Sass/Nav.scss";
 import MenuIcon from '@material-ui/icons/Menu';
 import logo from "./img/logo.png";
+import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
+import PhoneIcon from '@material-ui/icons/Phone';
+import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+
+
 
 
 function Nav() {
@@ -20,9 +31,9 @@ function Nav() {
       headerEl = document.getElementById("navbar");
 
     if (distanceY > fixOn) {
-      headerEl.classList.add("fix_nav");
+      headerEl.classList.add("fix-nav");
     } else {
-      headerEl.classList.remove("fix_nav");
+      headerEl.classList.remove("fix-nav");
     }
   }
 
@@ -33,6 +44,14 @@ function Nav() {
   return (
     <div>
       <>
+      <div className="topnav">
+        <div className="topnav-flex">
+          <div className="topnav-flex-item topnav-address"><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</div>
+          <div className="topnav-flex-item topnav-phone"><PhoneIcon />(610)-123-4567</div>
+          <div className="topnav-flex-item topnav-hours"><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</div>
+          <div className="topnav-flex-item topnav-social"><FacebookIcon /> <TwitterIcon /> <LinkedInIcon /> <PinterestIcon /> <InstagramIcon /></div>
+        </div>
+      </div>
         <nav className="navbar" id="navbar">
           <div className="nav-container">
             <a href="/">
