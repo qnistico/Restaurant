@@ -2,7 +2,9 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
-
+  .slick-dots {
+    margin-left: 200px;
+  }
   h2 {
     color: #e0bc75;
     font-size: 32px;
@@ -19,6 +21,7 @@
     color: #f1f2f5;
     cursor: grab;
     position: relative;
+    text-align: center;
 
     h3 {
       font-size: 24px;
@@ -30,6 +33,7 @@
       font-weight: 700;
       padding-bottom: 30px;
       max-width: 1000px;
+      margin: auto;
     }
     .customer-reviews-img {
       width: 160px;
@@ -42,17 +46,18 @@
     .customer-reviews-bottom {
       display: flex;
       flex-flow: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 
 @media screen and (max-width: 576px) {
     .customer-reviews {
-        height: 120vh;
+        height: 100vh;
         .slick-dots {
             margin-top: 100px;
+            margin-left: 0;
           }
     }
   .customer-reviews-item {
