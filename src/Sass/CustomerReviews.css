@@ -71,4 +71,10 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
+@media screen and (max-width: 576px) {
+  .customer-reviews-item p {
+    font-size: 24px !important;
+  }
+}
 /*# sourceMappingURL=CustomerReviews.css.map */

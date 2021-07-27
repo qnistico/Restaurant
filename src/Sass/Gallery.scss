@@ -34,7 +34,7 @@
     background-color: #261e1c;
     color: #e0bc75;
     padding: 12px 20px;
-    margin-right: 10px;
+    margin: 5px;
     border-color: #261e1c;
     cursor: pointer;
   }
@@ -44,5 +44,41 @@
 
     background-color: #e0bc75;
     color: black;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .gallery-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: repeat(3, 1fr) !important;
+
+  }
+  .gallery-buttons {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 140px !important;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    button {
+      flex: 1 40% !important;
+      
+    }
+}
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-grid {
+    
+    grid-template-columns: repeat(2, 1fr) !important;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    img {}
   }
 }

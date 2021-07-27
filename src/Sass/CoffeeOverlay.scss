@@ -49,3 +49,13 @@
   
 }
 
+@media screen and (max-width: 576px) {
+  .coffee-overlay {
+    h2 {
+      font-size: 36px !important;
+    }
+    p {
+      font-size: 20px !important;
+    }
+  }
+}

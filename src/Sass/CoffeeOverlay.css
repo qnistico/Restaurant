@@ -64,4 +64,13 @@
   margin-top: 40px;
   border: 1px solid #ad985f;
 }
+
+@media screen and (max-width: 576px) {
+  .coffee-overlay h2 {
+    font-size: 36px !important;
+  }
+  .coffee-overlay p {
+    font-size: 20px !important;
+  }
+}
 /*# sourceMappingURL=CoffeeOverlay.css.map */

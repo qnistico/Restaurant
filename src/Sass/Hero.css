@@ -44,4 +44,14 @@
 .hero .hero-content .hero-button {
   margin-top: 30px;
 }
+
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 38px !important;
+  }
+  .hero p {
+    font-size: 20px !important;
+    margin-top: 10px;
+  }
+}
 /*# sourceMappingURL=Hero.css.map */

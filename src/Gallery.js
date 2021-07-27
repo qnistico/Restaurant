@@ -44,13 +44,13 @@ function Gallery() {
     { id: "11", imageName: pizza3, tag: "Pizza" },
     { id: "12", imageName: pizza4, tag: "Pizza" },
     { id: "13", imageName: wine1, tag: "Wine" },
-    { id: "13", imageName: wine2, tag: "Wine" },
-    { id: "13", imageName: wine3, tag: "Wine" },
-    { id: "13", imageName: wine4, tag: "Wine" },
-    { id: "14", imageName: coffee1, tag: "Coffee" },
-    { id: "14", imageName: coffee2, tag: "Coffee" },
-    { id: "14", imageName: coffee3, tag: "Coffee" },
-    { id: "14", imageName: coffee4, tag: "Coffee" },
+    { id: "14", imageName: wine2, tag: "Wine" },
+    { id: "15", imageName: wine3, tag: "Wine" },
+    { id: "16", imageName: wine4, tag: "Wine" },
+    { id: "17", imageName: coffee1, tag: "Coffee" },
+    { id: "18", imageName: coffee2, tag: "Coffee" },
+    { id: "19", imageName: coffee3, tag: "Coffee" },
+    { id: "20", imageName: coffee4, tag: "Coffee" },
   ];
   const [tag, setTag] = useState("All");
   const [filteredImages, setFilteredImages] = useState([]);

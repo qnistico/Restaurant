@@ -148,4 +148,11 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .about-top h2 {
+    font-size: 36px !important;
+    line-height: 1.4;
+  }
+}
 /*# sourceMappingURL=About.css.map */
