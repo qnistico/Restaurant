@@ -45,7 +45,7 @@ function LPMenu(props) {
     <div className="lp-menu">
       <div className="menu-buttons">
         <h2>Browse Our Menu</h2>
-        <div>
+        <div className="menu-buttons-container">
           <button
             className={`menuButton ${
               menuCategory == 0 ? "menuButtonActive" : ""

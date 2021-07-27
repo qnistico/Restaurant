@@ -27,7 +27,7 @@ function Nav() {
 
   function fixHeaderOnScoll() {
     const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-      fixOn = 450,
+      fixOn = 100,
       headerEl = document.getElementById("navbar");
 
     if (distanceY > fixOn) {

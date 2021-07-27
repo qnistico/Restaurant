@@ -1,11 +1,11 @@
 .topnav {
 	width: 100%;
-	height: 35px;
+	height: 40px;
 	position: absolute;
 	top: 0;
-	background-color: #261e1c;
+	background-color: #161211;
 	z-index: 5;
-	border-bottom: 1px solid #4e411d;
+	border-bottom: 1px solid #362b0d;
 	.topnav-flex {
 		display: flex;
 		justify-content: space-between;
@@ -14,11 +14,14 @@
 		margin: auto;
 		.topnav-flex-item {
 			color: #f1f2f5;
-			padding: 7px 20px 8px 0;
+			padding: 10px 0;
 			font-size: 13px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			a {
+				text-decoration: none;
+			}
 			.MuiSvgIcon-root {
 				font-size: 20px;
 				margin-right: 10px;
@@ -39,7 +42,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	top: 35px;
+	top: 40px;
 	height: 75px;
 	box-shadow: none;
 	z-index: 9999;

@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "./Sass/CustomerReviews.scss";
 import reviewportrait1 from "./img/reviewportrait1.jpg";
+import reviewportrait2 from "./img/reviewportrait2.jpg";
+import reviewportrait3 from "./img/reviewportrait3.jpg";
 import reviewsimg from "./img/reviewsimg.jpg";
 import { Parallax } from "react-parallax";
 
@@ -52,7 +54,7 @@ function CustomerReviews() {
     </p>
     <div className="customer-reviews-bottom">
       <h3>- John Scorzetti</h3>
-      <img src={reviewportrait1} alt="man" className="customer-reviews-img"/>
+      <img src={reviewportrait2} alt="man" className="customer-reviews-img"/>
     </div>
   </div>
   <div className="customer-reviews-item">
@@ -65,7 +67,7 @@ function CustomerReviews() {
     </p>
     <div className="customer-reviews-bottom">
       <h3>- John Scorzetti</h3>
-      <img src={reviewportrait1} alt="woman" className="customer-reviews-img"/>
+      <img src={reviewportrait3} alt="woman" className="customer-reviews-img"/>
     </div>
   </div>
 </Slider>

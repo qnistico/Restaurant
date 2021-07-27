@@ -1,11 +1,11 @@
 .topnav {
   width: 100%;
-  height: 35px;
+  height: 40px;
   position: absolute;
   top: 0;
-  background-color: #261e1c;
+  background-color: #161211;
   z-index: 5;
-  border-bottom: 1px solid #4e411d;
+  border-bottom: 1px solid #362b0d;
 }
 
 .topnav .topnav-flex {
@@ -24,7 +24,7 @@
 
 .topnav .topnav-flex .topnav-flex-item {
   color: #f1f2f5;
-  padding: 7px 20px 8px 0;
+  padding: 10px 0;
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +35,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.topnav .topnav-flex .topnav-flex-item a {
+  text-decoration: none;
 }
 
 .topnav .topnav-flex .topnav-flex-item .MuiSvgIcon-root {
@@ -62,7 +66,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 35px;
+  top: 40px;
   height: 75px;
   -webkit-box-shadow: none;
           box-shadow: none;

@@ -44,21 +44,11 @@ function Footer() {
           <div className="footer-item footer-nav">
               <h4>Useful Links</h4>
             <ul>
-              <a href="">
-                <li>Menu</li>
-              </a>
-              <a href="">
-                <li>About</li>
-              </a>
-              <a href="">
-                <li>Gallery</li>
-              </a>
-              <a href="">
-                <li>Chefs</li>
-              </a>
-              <a href="">
-                <li>Blog</li>
-              </a>
+                <li><a href="/MenuPage">Menu</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="">Chefs</a></li>
+                <li><a href="/ContactUs">Contact Us</a></li>
             </ul>
           </div>
         </div>
