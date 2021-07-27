@@ -4,7 +4,7 @@
 }
 
 .contact-page .contact-page-content {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 .contact-page .contact-page-content h2 {
@@ -73,5 +73,20 @@
 .contact-page .send-button {
   margin-top: 20px;
   min-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-group-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .form-group-flex .fg1, .form-group-flex .fg2 {
+    margin-left: 0 !important;
+  }
+  .form-group-flex .fg1 label, .form-group-flex .fg2 label {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=ContactPage.css.map */

@@ -267,6 +267,9 @@
   .menu-buttons .menu-buttons-container {
     margin: auto;
   }
+  .menu-buttons .menu-buttons-container button {
+    margin: 5px !important;
+  }
   .pastaitems,
   .fishitems,
   .pizzaitems,
@@ -301,6 +304,12 @@
     width: 100% !important;
     max-width: unset !important;
     max-height: unset !important;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .menu-buttons h2 {
+    width: 100%;
   }
 }
 

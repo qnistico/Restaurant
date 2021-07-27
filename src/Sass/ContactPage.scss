@@ -2,7 +2,7 @@
     width: 100%;
     background-color: #f1f2f5;
     .contact-page-content {
-        padding: 60px 0;
+        padding: 60px 20px;
 
     h2 {
         padding-bottom: 20px;
@@ -57,5 +57,17 @@
     .send-button {
         margin-top: 20px;
         min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-group-flex {
+        flex-flow: row wrap;
+        .fg1, .fg2 {
+            margin-left: 0 !important;
+            label {
+                margin-top: 20px;
+            }
+        }
     }
 }

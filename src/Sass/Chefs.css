@@ -157,4 +157,22 @@
             flex: 1 45% !important;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .chefs {
+    padding: 60px 20px;
+  }
+  .chefs .chefs-flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column !important;
+            flex-flow: column !important;
+  }
+  .chefs .chef-card {
+    margin: 0 0 30px 0 !important;
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 100% !important;
+            flex: 1 100% !important;
+  }
+}
 /*# sourceMappingURL=Chefs.css.map */

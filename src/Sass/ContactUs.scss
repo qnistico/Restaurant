@@ -83,12 +83,23 @@
 @media screen and (max-width: 992px) {
     .contact-us {
         padding: 60px 20px;
+        .form-group label {
+            margin-top: 18.4px;
+        }
     }
     .contact-us-flex {
         flex-flow: column;
         iframe {
             width: 100% !important;
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-us {
+        .contact-form {
+            padding: 30px;
         }
     }
 }

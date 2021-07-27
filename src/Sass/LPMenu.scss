@@ -201,6 +201,9 @@
     }
     .menu-buttons-container {
       margin: auto;
+      button {
+        margin: 5px !important;
+      }
     }
   }
   .pastaitems,
@@ -233,6 +236,14 @@
       width: 100% !important;
       max-width: unset !important;
       max-height: unset !important;
+    }
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .menu-buttons {
+    h2 {
+      width: 100%;
     }
   }
 }

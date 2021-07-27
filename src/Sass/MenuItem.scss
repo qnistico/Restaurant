@@ -1,6 +1,6 @@
 .menu-item {
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 20px;
   background-color: #e6e6e6;
   .button-flex {
     width: 62vw;
@@ -73,5 +73,14 @@
         background-color: #f1f2f5;
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .button-flex {
+    width: 100% !important;
+  }
+  .menu-item-content {
+    width: 100% !important;
   }
 }
