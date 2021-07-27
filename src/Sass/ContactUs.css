@@ -119,4 +119,20 @@
   outline: none;
   border: none;
 }
+
+@media screen and (max-width: 992px) {
+  .contact-us {
+    padding: 60px 20px;
+  }
+  .contact-us-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .contact-us-flex iframe {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=ContactUs.css.map */

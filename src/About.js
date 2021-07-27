@@ -31,19 +31,18 @@ function About(props) {
       </div>
       <div className="lp-gallery">
         <div className="lp-gallery-flex">
-        <a href="/Gallery">
-
-          <div className="lp-gallery-overlay">
+          <a href="/Gallery">
+            <div className="lp-gallery-overlay">
               <button className="lp-gallery-button">View Gallery</button>
-          </div>
+            </div>
           </a>
           <img src={pizza4} alt="" />
-          <img src={pizza1} alt="" />
-          <img src={fish1} alt="" />
+          <img src={pizza1} alt="" className="mobile-hide" />
+          <img src={fish1} alt="" className="mobile-hide" />
           <img src={pizza2} alt="" />
           <img src={pasta2} alt="" />
-          <img src={pizza3} alt="" />
-          <img src={pasta3} alt="" />
+          <img src={pizza3} alt="" className="mobile-hide" />
+          <img src={pasta3} alt="" className="mobile-hide" />
           <img src={fish2} alt="" />
         </div>
       </div>

@@ -39,7 +39,12 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
-      
+      img {
+        width: 25%;
+        height: 19vw;
+        object-fit: cover;
+        margin: 0;
+      }
 
       .lp-gallery-overlay {
           width: 100%;
@@ -90,15 +95,20 @@
           background-color: #261e1c;
           color: #e0bc75;
       }
-      img {
-        width: 25%;
-        height: 19vw;
-        object-fit: cover;
-        margin: 0;
-      }
+      
     }
   }
   .lp-gallery-flex:hover .lp-gallery-overlay {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lp-gallery img {
+    flex: 1 50%;
+    height: auto !important;
+  }
+  .mobile-hide {
+    display: none;
   }
 }

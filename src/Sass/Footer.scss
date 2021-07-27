@@ -55,3 +55,22 @@ footer {
 }
   }
 }
+
+@media screen and (max-width: 699px) {
+  .footer-flex {
+    flex-flow: row wrap;
+    .footer-item {
+      flex: 1 50% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-flex {
+    flex-flow: column;
+    .footer-item {
+      text-align: center;
+      width: 100% !important;
+    }
+  }
+}

@@ -90,7 +90,7 @@
         transition: all 0.4s ease;
         cursor: pointer;
       }
-      
+
       .menu-img-overlay-button {
         width: 100px;
         height: 40px;
@@ -99,7 +99,6 @@
         font-weight: 700;
         position: absolute;
         border: 1px solid #ad985f;
-        bottom: 0;
         transition: all 0.4s ease;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.158);
 
@@ -150,7 +149,7 @@
     margin: 0 30px 30px 0;
     cursor: pointer;
   }
-  
+
   .pastaitems:hover .menu-img-overlay,
   .fishitems:hover .menu-img-overlay,
   .pizzaitems:hover .menu-img-overlay,
@@ -158,13 +157,7 @@
   .coffeeitems:hover .menu-img-overlay {
     opacity: 1;
   }
-  .pastaitems:hover .menu-img-overlay-button,
-  .fishitems:hover .menu-img-overlay-button,
-  .pizzaitems:hover .menu-img-overlay-button,
-  .wineitems:hover .menu-img-overlay-button,
-  .coffeeitems:hover .menu-img-overlay-button {
-      bottom: 53px;
-  }
+
   .menuButtonActive {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158),
       0 2px 10px 0 rgba(0, 0, 0, 0.158);
@@ -200,7 +193,7 @@
     }
   }
   .menu-buttons {
-    flex-flow: column;  
+    flex-flow: column;
     h2 {
       text-align: center;
       width: 50%;
@@ -211,29 +204,48 @@
     }
   }
   .pastaitems,
-    .fishitems,
-    .pizzaitems,
-    .wineitems,
-    .coffeeitems {
-      flex-flow: column;
-      margin: 0 !important;
+  .fishitems,
+  .pizzaitems,
+  .wineitems,
+  .coffeeitems {
+    flex-flow: column;
+    margin: 0 !important;
+  }
+  .lp-menu-item {
+    margin: 15px !important;
+  }
+  .lp-menu-item-content {
+    padding: 0 !important;
+    margin-top: 10px;
+    a {
+      margin-bottom: 8px;
     }
-    .lp-menu-item {
-      margin: 15px !important;
+    p {
+      margin-bottom: 8px;
     }
-    .lp-menu-item-content {
-      padding: 0 !important;
-      margin-top: 10px;
-    }
-    .lp-menu-item-img {
+  }
+  .lp-menu-item-img {
+    width: 100% !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    height: 100% !important;
+    img {
       width: 100% !important;
       max-width: unset !important;
       max-height: unset !important;
-      height: 100% !important;
-      img {
-        width: 100% !important;
-      max-width: unset !important;
-      max-height: unset !important;
-      }
     }
   }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-buttons-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    button {
+      flex: 1 40% !important;
+      
+      margin: 5px !important;
+    }
+  }
+}

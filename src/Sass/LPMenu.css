@@ -135,7 +135,6 @@
   font-weight: 700;
   position: absolute;
   border: 1px solid #ad985f;
-  bottom: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.158);
@@ -213,14 +212,6 @@
   opacity: 1;
 }
 
-.lp-menu .pastaitems:hover .menu-img-overlay-button,
-.lp-menu .fishitems:hover .menu-img-overlay-button,
-.lp-menu .pizzaitems:hover .menu-img-overlay-button,
-.lp-menu .wineitems:hover .menu-img-overlay-button,
-.lp-menu .coffeeitems:hover .menu-img-overlay-button {
-  bottom: 53px;
-}
-
 .lp-menu .menuButtonActive {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
@@ -294,6 +285,12 @@
     padding: 0 !important;
     margin-top: 10px;
   }
+  .lp-menu-item-content a {
+    margin-bottom: 8px;
+  }
+  .lp-menu-item-content p {
+    margin-bottom: 8px;
+  }
   .lp-menu-item-img {
     width: 100% !important;
     max-width: unset !important;
@@ -304,6 +301,27 @@
     width: 100% !important;
     max-width: unset !important;
     max-height: unset !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-buttons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu-buttons-container button {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 40% !important;
+            flex: 1 40% !important;
+    margin: 5px !important;
   }
 }
 /*# sourceMappingURL=LPMenu.css.map */

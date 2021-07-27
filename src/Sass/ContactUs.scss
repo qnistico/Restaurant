@@ -79,3 +79,16 @@
     }
 }
 }
+
+@media screen and (max-width: 992px) {
+    .contact-us {
+        padding: 60px 20px;
+    }
+    .contact-us-flex {
+        flex-flow: column;
+        iframe {
+            width: 100% !important;
+            margin-bottom: 30px;
+        }
+    }
+}

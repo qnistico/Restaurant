@@ -79,4 +79,31 @@ footer .footer-bottom .footer-bottom-flex .footer-bottom-icons .MuiSvgIcon-root 
   margin-left: 5px;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 699px) {
+  .footer-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .footer-flex .footer-item {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 50% !important;
+            flex: 1 50% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .footer-flex .footer-item {
+    text-align: center;
+    width: 100% !important;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

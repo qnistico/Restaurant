@@ -25,6 +25,7 @@
 
 .coffee-overlay .coffee-overlay-flex .coffee-overlay-content {
   width: 100%;
+  padding: 20px;
   z-index: 5;
   text-align: center;
   display: -webkit-box;
