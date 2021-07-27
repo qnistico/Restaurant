@@ -333,4 +333,10 @@
     margin: 5px !important;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .lp-menu-item-price {
+    margin-bottom: 20px !important;
+  }
+}
 /*# sourceMappingURL=LPMenu.css.map */

@@ -57,7 +57,7 @@
 
 .about .lp-gallery .lp-gallery-flex img {
   width: 25%;
-  height: 19vw;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0;
