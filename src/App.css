@@ -91,4 +91,10 @@ p {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
 /*# sourceMappingURL=App.css.map */

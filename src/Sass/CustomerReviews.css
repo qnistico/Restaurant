@@ -7,7 +7,7 @@
 .customer-reviews h2 {
   color: #e0bc75;
   font-size: 32px;
-  font-family: 'Allura', sans-serif;
+  font-family: "Allura", sans-serif;
   padding: 30px 0;
 }
 
@@ -73,8 +73,18 @@
 }
 
 @media screen and (max-width: 576px) {
+  .customer-reviews {
+    height: 120vh;
+  }
+  .customer-reviews .slick-dots {
+    margin-top: 100px;
+  }
   .customer-reviews-item p {
     font-size: 24px !important;
+  }
+  .customer-reviews-item .customer-reviews-img {
+    width: 140px !important;
+    height: 140px !important;
   }
 }
 /*# sourceMappingURL=CustomerReviews.css.map */

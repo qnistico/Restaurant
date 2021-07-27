@@ -85,5 +85,9 @@ p {
   box-shadow: none;
 }
 
-
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
 
