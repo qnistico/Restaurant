@@ -17,7 +17,7 @@ function Footer() {
       <footer>
         <div className="footer-flex">
           <div className="footer-item footer-about">
-              <h4>About</h4>
+              <h3>About</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -27,24 +27,16 @@ function Footer() {
             <img src={logo} alt="" />
           </div>
           <div className="footer-item footer-contact">
-              <h4>Contact Info</h4>
+              <h3>Contact Info</h3>
             <ul>
               <li><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</li>
               <li><PhoneIcon /><a href="tel:610-123-4567">(610)-123-4567</a></li>
               <li><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</li>
             </ul>
           </div>
-          <div className="footer-item footer-foods">
-              <h4>Featured</h4>
-            <ul>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-          </div>
+          
           <div className="footer-item footer-nav">
-              <h4>Useful Links</h4>
+              <h3>Useful Links</h3>
             <ul>
                 <li><a href="/MenuPage">Menu</a></li>
                 <li><a href="/AboutPage">About</a></li>
@@ -58,8 +50,7 @@ function Footer() {
           <div className="footer-bottom-flex">
           <p>&copy; 2021 | Avellino's Italian Cuisine | All Rights Reserved</p>
           <div className="footer-bottom-icons">
-          <FacebookIcon />
-          <InstagramIcon />
+          <a href="https://facebook.com/" rel="noopener" target="_blank"><FacebookIcon /></a> <a href="https://twitter.com/" rel="noopener" target="_blank"><TwitterIcon /></a> <a href="https://www.linkedin.com/" rel="noopener" target="_blank"><LinkedInIcon /></a> <a href="https://www.pinterest.com/" rel="noopener" target="_blank"><PinterestIcon /></a> <a href="https://www.instagram.com/" rel="noopener" target="_blank"><InstagramIcon /></a>
           </div>
           </div>
         </div>

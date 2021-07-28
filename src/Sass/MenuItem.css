@@ -14,22 +14,9 @@
           justify-content: flex-start;
 }
 
-.menu-item h2 {
-  overflow: hidden;
-  margin-bottom: 20px;
-  -webkit-transition: all 0.38s ease;
-  transition: all 0.38s ease;
-}
-
-.menu-item h2 a {
-  color: #e0bc75;
-  -webkit-transition: all 0.38s ease;
-  transition: all 0.38s ease;
+.menu-item .hero-button {
   text-decoration: none;
-}
-
-.menu-item h2 a:hover {
-  color: #333;
+  margin-bottom: 20px;
 }
 
 .menu-item .menu-item-flex {

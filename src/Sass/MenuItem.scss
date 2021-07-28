@@ -7,23 +7,13 @@
     display: flex;
     justify-content: flex-start;
   }
-  h2 {
-    overflow: hidden;
-    margin-bottom: 20px;
-    transition: all 0.38s ease;
-    a {
-      color: #e0bc75;
-      transition: all 0.38s ease;
-      text-decoration: none;
-
-
-    }
-    a:hover {
-      color: #333;
-    }
+  
+    
     .hero-button {
+      text-decoration: none;
+      margin-bottom: 20px;
     }
-  }
+  
  
   
   .menu-item-flex {

@@ -22,6 +22,8 @@ import coffee2 from "./img/coffee2.jpg";
 import coffee3 from "./img/coffee3.jpg";
 import coffee4 from "./img/coffee4.jpg";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
+
 
 
 function MenuItem(props) {
@@ -233,12 +235,17 @@ function MenuItem(props) {
   var foodID = new URLSearchParams(window.location.search).get("ID");
   const foodItem = menuData.find((food) => food.foodID == foodID);
   return (
+    <div>
+      <Helmet>
+        <title>{foodItem.foodtitle} - Avellino's Italian Cuisine</title>
+        <meta name="description" content="Food item from Avellino's menu" />
+      </Helmet>
     <div className="menu-item">
           <Fade duration="1210">
 
       <div className="menu-item-flex">
         <div className="button-flex">
-      <h2 className="hero-button"><a href="/MenuPage" >Back to Menu</a></h2>
+      <a href="/MenuPage" className="hero-button">Back to Menu</a>
       </div>
 
         <div className="menu-item-content">
@@ -262,6 +269,7 @@ function MenuItem(props) {
         </div>
       </div>
       </Fade>
+    </div>
     </div>
   );
 }

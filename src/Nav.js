@@ -49,7 +49,7 @@ function Nav() {
           <div className="topnav-flex-item topnav-address"><a href="#!" className="topnav-flex-item topnav-address"><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</a></div>
           <div className="topnav-flex-item topnav-phone"><a href="tel:610-123-4567" className="topnav-flex-item topnav-address"><PhoneIcon />(610)-123-4567</a></div>
           <div className="topnav-flex-item topnav-hours"><a href="#!" className="topnav-flex-item topnav-address"><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</a></div>
-          <div className="topnav-flex-item topnav-social"><FacebookIcon /> <TwitterIcon /> <LinkedInIcon /> <PinterestIcon /> <InstagramIcon /></div>
+          <div className="topnav-flex-item topnav-social"><a href="https://facebook.com/" rel="noopener" target="_blank"><FacebookIcon /></a> <a href="https://twitter.com/" rel="noopener" target="_blank"><TwitterIcon /></a> <a href="https://www.linkedin.com/" rel="noopener" target="_blank"><LinkedInIcon /></a> <a href="https://www.pinterest.com/" rel="noopener" target="_blank"><PinterestIcon /></a> <a href="https://www.instagram.com/" rel="noopener" target="_blank"><InstagramIcon /></a></div>
         </div>
       </div>
         <nav className="navbar" id="navbar">

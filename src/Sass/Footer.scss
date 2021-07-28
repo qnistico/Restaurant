@@ -11,7 +11,7 @@ footer {
         padding: 0 20px;
       color: #d1d1d1;
       line-height: 2;
-      h4 {
+      h3 {
           font-size: 20px;
           margin-bottom: 13px;
           color: #ad985f;
@@ -56,6 +56,9 @@ footer {
     .footer-bottom-icons {
       display: flex;
       align-items: center;
+      a {
+        color: #d1d1d1;
+      }
     .MuiSvgIcon-root {
       margin-left: 5px;
       margin-bottom: 0;
@@ -77,7 +80,7 @@ footer {
 @media screen and (max-width: 576px) {
   .footer-flex {
     flex-flow: column;
-    h4 {
+    h3 {
       margin: 13px 0;
     }
     ul li {
@@ -89,6 +92,12 @@ footer {
     .footer-item {
       text-align: center;
       width: 100% !important;
+    }
+  }
+  .footer-bottom-flex {
+    flex-flow: column-reverse;
+    p {
+      margin-top: 8px;
     }
   }
 }
