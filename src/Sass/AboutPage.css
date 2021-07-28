@@ -3,6 +3,32 @@
   background-color: #f1f2f5;
 }
 
+.about-page .slide {
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.about-page .slide .slick-prev {
+  left: 40px;
+  z-index: 5;
+  margin-top: 175px;
+}
+
+.about-page .slide .slick-next {
+  right: 65px;
+  z-index: 5;
+  margin-top: 175px;
+}
+
 .about-page .about-page-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,11 +75,12 @@
 }
 
 .about-page .our-history .our-history-item {
-  z-index: 99;
+  z-index: 5;
   text-align: center;
   position: relative;
   cursor: -webkit-grab;
   cursor: grab;
+  padding: 30px;
 }
 
 .about-page .our-history .our-history-item h2 {
@@ -78,6 +105,7 @@
 }
 
 .slide {
+  width: 100%;
   max-width: 1000px;
   margin: auto;
 }
@@ -87,5 +115,41 @@
   font-size: 40px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .about-page-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .about-page-left img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-page .slide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .about-page .slide h3 {
+    font-size: 36px !important;
+  }
+  .about-page .slick-prev,
+  .about-page .slick-next {
+    margin-top: 175px !important;
+  }
+  .about-page .slick-prev {
+    left: 10px !important;
+  }
+  .about-page .slick-next {
+    right: 32px !important;
+  }
 }
 /*# sourceMappingURL=AboutPage.css.map */

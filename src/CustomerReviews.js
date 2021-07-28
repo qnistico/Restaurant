@@ -10,8 +10,8 @@ import { Parallax } from "react-parallax";
 function CustomerReviews() {
   var settings = {
     accessibility: true,
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     infinite: true,
     speed: 618,
     slidesToShow: 1,
@@ -30,7 +30,7 @@ function CustomerReviews() {
       <div className="customer-reviews">
 
 
-<Slider {...settings}>
+<Slider {...settings} className="slide">
   <div className="customer-reviews-item">
         <h2>Customer Reviews</h2>
 

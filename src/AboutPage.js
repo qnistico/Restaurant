@@ -10,34 +10,35 @@ import aboutslideimg from "./img/aboutslideimg.jpg";
 import { Fade } from "react-reveal";
 
 function AboutPage() {
-    var settings = {
-        accessibility: true,
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 618,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-      };
+  var settings = {
+    accessibility: true,
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 618,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
   const ParallaxContainer = () => (
     <Parallax
       bgImage={aboutslideimg}
       bgImageAlt="people eating in a restaurant"
       strength={300}
     >
-<div className="our-history">
-    <div className="our-history-gradient"></div>
-        <Slider className="slide">
+      <div className="our-history">
+        <div className="our-history-gradient"></div>
+        <Slider className="slide" {...settings}>
           <div className="our-history-item">
-              <h2>Our History</h2>
+            <h2>Our History</h2>
             <h3>Our Beginning</h3>
             <p className="date">May 5, 2003</p>
             <p>
               Avellino's opened in 2003 when our family decided to pursue their
               dream of sharing our authentic Italian cuisine with the world.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.
             </p>
           </div>
           <div className="our-history-item">
@@ -72,29 +73,38 @@ function AboutPage() {
       </div>
     </Parallax>
   );
-  
+
   return (
-      <Fade duration="1210">
-    <div className="about-page">
-      <PagesHero phimg={herobg} phheader="About Avellino's" />
-      <div className="about-page-left">
-        <div className="about-page-left-content">
-          <h2>About Avellino's</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+    <Fade duration="1210">
+      <div className="about-page">
+        <PagesHero phimg={herobg} phheader="About Avellino's" />
+        <div className="about-page-left">
+          <div className="about-page-left-content">
+            <h2>About Avellino's</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Velit aliquet sagittis id consectetur purus ut faucibus pulvinar
+              elementum. Vulputate odio ut enim blandit volutpat maecenas. Quis
+              lectus nulla at volutpat diam ut. Quis blandit turpis cursus in
+              hac habitasse platea dictumst quisque. Sed id semper risus in
+              hendrerit gravida rutrum quisque non. Malesuada pellentesque elit
+              eget gravida cum sociis. Sit amet risus nullam eget felis eget
+              nunc.
+            </p>
+          </div>
+          <img src={aboutimg} alt="" />
         </div>
-        <img src={aboutimg} alt="" />
+        {ParallaxContainer()}
+        <Chefs />
       </div>
-      {ParallaxContainer()}
-      <Chefs />
-    </div>
     </Fade>
   );
 }

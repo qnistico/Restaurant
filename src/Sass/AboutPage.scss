@@ -1,6 +1,24 @@
 .about-page {
   width: 100%;
   background-color: #f1f2f5;
+  .slide {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    .slick-prev {
+      left: 40px;
+      z-index: 5;
+      margin-top: 175px;
+    }
+    .slick-next {
+      right: 65px;
+      z-index: 5;
+      margin-top: 175px;
+    }
+}
   .about-page-left {
     display: flex;
     .about-page-left-content {
@@ -34,10 +52,11 @@
       position: absolute;
     }
     .our-history-item {
-      z-index: 99;
+      z-index: 5;
       text-align: center;
       position: relative;
       cursor: grab;
+      padding: 30px;
       h2 {
         color: #e0bc75;
         font-size: 40px;
@@ -61,6 +80,7 @@
 }
 
 .slide {
+    width: 100%;
   max-width: 1000px;
   margin: auto;
   
@@ -72,3 +92,33 @@
     transition: all 0.5s ease;
 }
 
+@media screen and (max-width: 992px) {
+    .about-page-left {
+        flex-flow: column;
+        img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-page {
+    .slide {
+        justify-content: center;
+        align-items: start;
+        h3 {
+            font-size: 36px !important;
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        margin-top: 175px !important;
+      }
+      .slick-prev {
+        left: 10px !important;
+      }
+      .slick-next {
+        right: 32px !important;
+      }
+    }
+}
