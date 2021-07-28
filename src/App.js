@@ -18,6 +18,7 @@ import Gallery from "./Gallery";
 import SimpleReactLightbox from "simple-react-lightbox";
 import ContactPage from "./ContactPage";
 import AboutPage from "./AboutPage";
+import { Helmet } from "react-helmet";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Helmet />
       <ScrollToTop />
 
         <Nav />

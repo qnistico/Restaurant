@@ -23,6 +23,8 @@ import "./Sass/Gallery.scss";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet";
+
 
 function Gallery() {
   const options = {
@@ -60,6 +62,11 @@ function Gallery() {
       : setFilteredImages(images.filter((image) => image.tag === tag));
   }, [tag]);
   return (
+    <div>
+      <Helmet>
+        <title>Avellino's Food Gallery</title>
+        <meta name="description" content="Avellino's Food Gallery" />
+      </Helmet>
     <Fade duration="1210">
       <div className="gallery" handleSetTag={setTag}>
         <div className="gallery-buttons">
@@ -87,6 +94,7 @@ function Gallery() {
         </SRLWrapper>
       </div>
     </Fade>
+    </div>
   );
 }
 

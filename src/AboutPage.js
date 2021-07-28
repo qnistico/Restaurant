@@ -8,6 +8,8 @@ import Chefs from "./Chefs";
 import { Parallax } from "react-parallax";
 import aboutslideimg from "./img/aboutslideimg.jpg";
 import { Fade } from "react-reveal";
+import { Helmet } from "react-helmet";
+
 
 function AboutPage() {
   var settings = {
@@ -87,6 +89,11 @@ function AboutPage() {
   );
 
   return (
+    <div>
+      <Helmet>
+        <title>About Avellino's - Avellino's Italian Cuisine</title>
+        <meta name="description" content="Information about Avellino's" />
+      </Helmet>
     <Fade duration="1210">
       <div className="about-page">
         <PagesHero phimg={herobg} phheader="About Avellino's" />
@@ -117,6 +124,7 @@ function AboutPage() {
         <Chefs />
       </div>
     </Fade>
+    </div>
   );
 }
 

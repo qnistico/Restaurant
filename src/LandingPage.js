@@ -8,6 +8,8 @@ import FoodShowcase from "./FoodShowcase";
 import Hero from "./Hero";
 import LPMenu from "./LPMenu";
 import ScrollToTop from "./ScrollToTop";
+import { Helmet } from "react-helmet";
+
 
 
 function LandingPage(props) {
@@ -16,6 +18,16 @@ function LandingPage(props) {
 
   return (
     <div className="landing-page">
+      <Helmet>
+        <title>Avellino's Italian Cuisine</title>
+        <meta
+          name="description"
+          content="Avellino's Italian Cuisine.  Delicious italian food restaurant."
+        />
+        <meta 
+        name="keywords" 
+        content="Restaurant, food, Italian Food, Restaurant Near Me, Gourmet Food" />
+      </Helmet>
       <ScrollToTop />
       <Hero />
       <About />
