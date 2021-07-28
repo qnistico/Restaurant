@@ -30,9 +30,9 @@ function Footer() {
               <h4>Contact Info</h4>
             <ul>
               <li></li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
+              <li><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</li>
+              <li><PhoneIcon /><a href="tel:610-123-4567">(610)-123-4567</a></li>
+              <li><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</li>
             </ul>
           </div>
           <div className="footer-item footer-foods">
@@ -48,9 +48,9 @@ function Footer() {
               <h4>Useful Links</h4>
             <ul>
                 <li><a href="/MenuPage">Menu</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="/AboutPage">About</a></li>
                 <li><a href="/Gallery">Gallery</a></li>
-                <li><a href="">Chefs</a></li>
+                <li><a href="/#Chefs">Chefs</a></li>
                 <li><a href="/ContactUs">Contact Us</a></li>
             </ul>
           </div>

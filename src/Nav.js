@@ -46,9 +46,9 @@ function Nav() {
       <>
       <div className="topnav">
         <div className="topnav-flex">
-          <div className="topnav-flex-item topnav-address"><a href="" className="topnav-flex-item topnav-address"><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</a></div>
-          <div className="topnav-flex-item topnav-phone"><a href="" className="topnav-flex-item topnav-address"><PhoneIcon />(610)-123-4567</a></div>
-          <div className="topnav-flex-item topnav-hours"><a href="" className="topnav-flex-item topnav-address"><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</a></div>
+          <div className="topnav-flex-item topnav-address"><a href="#!" className="topnav-flex-item topnav-address"><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</a></div>
+          <div className="topnav-flex-item topnav-phone"><a href="tel:610-123-4567" className="topnav-flex-item topnav-address"><PhoneIcon />(610)-123-4567</a></div>
+          <div className="topnav-flex-item topnav-hours"><a href="#!" className="topnav-flex-item topnav-address"><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</a></div>
           <div className="topnav-flex-item topnav-social"><FacebookIcon /> <TwitterIcon /> <LinkedInIcon /> <PinterestIcon /> <InstagramIcon /></div>
         </div>
       </div>
@@ -76,15 +76,9 @@ function Nav() {
               
               
               <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/Chefs"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
+                <a href="/#chefs" className="nav-links">
                   Chefs
-                </NavLink>
+                  </a>
               </li>
               <li className="nav-item">
                 <a href="/ContactPage" className="nav-links">

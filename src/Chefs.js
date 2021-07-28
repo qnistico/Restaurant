@@ -12,7 +12,7 @@ import { useHistory } from "react-router-dom";
 function Chefs(props) {
   const history = useHistory();
   return (
-    <div className="chefs">
+    <div className="chefs" id="chefs">
       <div className="chefs-flex">
         <div className="chefs-top">
           <h3>Meet Our Chefs</h3>
