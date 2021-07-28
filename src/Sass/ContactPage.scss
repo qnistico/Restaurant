@@ -60,6 +60,14 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .contact-page-content {
+        .send-button {
+            width: 100% !important;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .form-group-flex {
         flex-flow: row wrap;

@@ -29,7 +29,6 @@ function Footer() {
           <div className="footer-item footer-contact">
               <h4>Contact Info</h4>
             <ul>
-              <li></li>
               <li><LocationOnOutlinedIcon />123 Lorem Ave, PA, 12345 USA</li>
               <li><PhoneIcon /><a href="tel:610-123-4567">(610)-123-4567</a></li>
               <li><QueryBuilderIcon />Open Hours: Monday - Sunday, 5pm - 10pm</li>

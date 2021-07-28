@@ -114,6 +114,21 @@ footer .footer-bottom .footer-bottom-flex .footer-bottom-icons .MuiSvgIcon-root 
         -ms-flex-flow: column;
             flex-flow: column;
   }
+  .footer-flex h4 {
+    margin: 13px 0;
+  }
+  .footer-flex ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center !important;
+  }
   .footer-flex .footer-item {
     text-align: center;
     width: 100% !important;

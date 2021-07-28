@@ -77,6 +77,15 @@ footer {
 @media screen and (max-width: 576px) {
   .footer-flex {
     flex-flow: column;
+    h4 {
+      margin: 13px 0;
+    }
+    ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center !important;
+    }
     .footer-item {
       text-align: center;
       width: 100% !important;
