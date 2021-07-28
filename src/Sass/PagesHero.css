@@ -32,7 +32,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.618);
 }
 
 @media screen and (max-width: 576px) {

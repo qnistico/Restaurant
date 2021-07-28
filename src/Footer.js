@@ -3,6 +3,12 @@ import "./Sass/Footer.scss";
 import logo from "./img/logo.png";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
+import PhoneIcon from '@material-ui/icons/Phone';
+import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 function Footer() {
@@ -23,7 +29,7 @@ function Footer() {
           <div className="footer-item footer-contact">
               <h4>Contact Info</h4>
             <ul>
-              <li>Lorem</li>
+              <li></li>
               <li>Lorem</li>
               <li>Lorem</li>
               <li>Lorem</li>

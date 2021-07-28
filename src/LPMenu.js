@@ -126,7 +126,7 @@ function LPMenu(props) {
                   Farfelle Pasta
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, tomatoes, pesto, cream, oregeno and butter
+                  Wheat pasta with tomatoes, pesto, cream, oregeno and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
                 <p className="lp-menu-item-price">$17.00</p>
@@ -149,11 +149,11 @@ function LPMenu(props) {
                   Pasta with Shrimp
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, tomatoes, basil and butter
+                  Wheat pasta with shrimp, tomatoes, basil and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$17.00</p>
               </div>
             </div>
           </div>
@@ -173,11 +173,11 @@ function LPMenu(props) {
                   Linguine Pasta
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Wheat pasta with cheese, oregeno and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$14.00</p>
               </div>
             </div>
           </div>
@@ -197,11 +197,11 @@ function LPMenu(props) {
                   Linguine Pasta
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Wheat pasta with cheese, basil and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$17.00</p>
               </div>
             </div>
           </div>
@@ -241,7 +241,7 @@ function LPMenu(props) {
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$21.00</p>
               </div>
             </div>
           </div>
@@ -346,14 +346,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Margarita Pizza
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Pizza with mozzerella cheese, tomato sauce and basil
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$14.00</p>
               </div>
             </div>
           </div>
@@ -370,14 +370,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Plain Pizza
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Pizza with mozzerella cheese
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$14.00</p>
               </div>
             </div>
           </div>
@@ -394,14 +394,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Onion Pizza
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Pizza with mozzerella cheese, onions, green peppers and mushrooms
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$14.00</p>
               </div>
             </div>
           </div>
@@ -418,14 +418,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Meat Pizza
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Pizza with Italian sausage, mozzerella cheese, tomatoes and tomato sauce
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$13.00</p>
               </div>
             </div>
           </div>
@@ -458,14 +458,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Red Wine
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  1 glass of red wine from a brand of your choosing
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$12.00</p>
               </div>
             </div>
           </div>
@@ -482,14 +482,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Chablis White Wine
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Single bottle of chablis white wine
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$26.00</p>
               </div>
             </div>
           </div>
@@ -506,14 +506,14 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Cabernet Sauvignon
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Single bottle of Cabernet Sauvignon
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$65.00</p>
               </div>
             </div>
           </div>
@@ -530,10 +530,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Champagne
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Single bottle of champagne
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
@@ -570,7 +570,7 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Columbian Coffee
                 </a>
                 <p className="lp-menu-item-ingredients">
                   Wheat pasta, mushrooms, cream, oregeno and butter
@@ -594,7 +594,7 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Cappuccino
                 </a>
                 <p className="lp-menu-item-ingredients">
                   Wheat pasta, mushrooms, cream, oregeno and butter
@@ -618,7 +618,7 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Espresso Single Shot
                 </a>
                 <p className="lp-menu-item-ingredients">
                   Wheat pasta, mushrooms, cream, oregeno and butter
@@ -642,7 +642,7 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Espresso Double Shot
                 </a>
                 <p className="lp-menu-item-ingredients">
                   Wheat pasta, mushrooms, cream, oregeno and butter
