@@ -33,26 +33,26 @@ function Gallery() {
     },
   };
   const images = [
-    { id: "1", imageName: pasta1, tag: "Pasta" },
-    { id: "2", imageName: pasta2, tag: "Pasta" },
-    { id: "3", imageName: pasta3, tag: "Pasta" },
-    { id: "4", imageName: pasta4, tag: "Pasta" },
-    { id: "5", imageName: fish1, tag: "Fish" },
-    { id: "6", imageName: fish2, tag: "Fish" },
-    { id: "7", imageName: fish3, tag: "Fish" },
-    { id: "8", imageName: fish4, tag: "Fish" },
-    { id: "9", imageName: pizza1, tag: "Pizza" },
-    { id: "10", imageName: pizza2, tag: "Pizza" },
-    { id: "11", imageName: pizza3, tag: "Pizza" },
-    { id: "12", imageName: pizza4, tag: "Pizza" },
-    { id: "13", imageName: wine1, tag: "Wine" },
-    { id: "14", imageName: wine2, tag: "Wine" },
-    { id: "15", imageName: wine3, tag: "Wine" },
-    { id: "16", imageName: wine4, tag: "Wine" },
-    { id: "17", imageName: coffee1, tag: "Coffee" },
-    { id: "18", imageName: coffee2, tag: "Coffee" },
-    { id: "19", imageName: coffee3, tag: "Coffee" },
-    { id: "20", imageName: coffee4, tag: "Coffee" },
+    { id: "1", imageName: pasta1, tag: "Pasta", title: "pasta" },
+    { id: "2", imageName: pasta2, tag: "Pasta", title: "pasta" },
+    { id: "3", imageName: pasta3, tag: "Pasta", title: "pasta" },
+    { id: "4", imageName: pasta4, tag: "Pasta", title: "pasta" },
+    { id: "5", imageName: fish1, tag: "Fish", title: "fish" },
+    { id: "6", imageName: fish2, tag: "Fish", title: "fish" },
+    { id: "7", imageName: fish3, tag: "Fish", title: "fish" },
+    { id: "8", imageName: fish4, tag: "Fish", title: "fish" },
+    { id: "9", imageName: pizza1, tag: "Pizza", title: "pizza" },
+    { id: "10", imageName: pizza2, tag: "Pizza", title: "pizza" },
+    { id: "11", imageName: pizza3, tag: "Pizza", title: "pizza" },
+    { id: "12", imageName: pizza4, tag: "Pizza", title: "pizza" },
+    { id: "13", imageName: wine1, tag: "Wine", title: "wine" },
+    { id: "14", imageName: wine2, tag: "Wine", title: "wine" },
+    { id: "15", imageName: wine3, tag: "Wine", title: "wine" },
+    { id: "16", imageName: wine4, tag: "Wine", title: "wine" },
+    { id: "17", imageName: coffee1, tag: "Coffee", title: "coffee" },
+    { id: "18", imageName: coffee2, tag: "Coffee", title: "coffee" },
+    { id: "19", imageName: coffee3, tag: "Coffee", title: "coffee" },
+    { id: "20", imageName: coffee4, tag: "Coffee", title: "coffee" },
   ];
   const [tag, setTag] = useState("All");
   const [filteredImages, setFilteredImages] = useState([]);
@@ -81,9 +81,9 @@ function Gallery() {
           <div className="gallery-grid">
             {filteredImages.map((image) => (
               <div key={image.id} className="gallery-img-container">
-                <a href={`${image.imageName}`}>
+                <a href={image.imageName} title={image.title}>
                   <img
-                    src={`${image.imageName}`}
+                    src={image.imageName}
                     alt=""
                     className="gallery-img"
                   />
