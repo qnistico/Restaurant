@@ -123,10 +123,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Farfelle Pasta
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Wheat pasta, tomatoes, pesto, cream, oregeno and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
                 <p className="lp-menu-item-price">$17.00</p>
@@ -194,7 +194,7 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Linguine Pasta
                 </a>
                 <p className="lp-menu-item-ingredients">
                   Wheat pasta, mushrooms, cream, oregeno and butter
@@ -234,10 +234,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Halibut
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Halibut with edamame beans, avocado, tomatoes and scallions
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
@@ -258,10 +258,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Cod Fish
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Cod fish with white rice, string beans and butter
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
@@ -282,10 +282,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Salmon
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Salmon with spinach, carrots and cucumber
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
@@ -306,10 +306,10 @@ function LPMenu(props) {
               </div>
               <div className="lp-menu-item-content">
                 <a href="#!" className="lp-menu-item-title">
-                  Penne Pasta
+                  Breaded Salmon
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Salmon with tomatoes, potatoes and eggplant
                 </p>
                 <p className="lp-menu-item-allergens">Gluten | Dairy</p>
 
