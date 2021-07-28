@@ -10,7 +10,6 @@ import aboutslideimg from "./img/aboutslideimg.jpg";
 import { Fade } from "react-reveal";
 import { Helmet } from "react-helmet";
 
-
 function AboutPage() {
   var settings = {
     accessibility: true,
@@ -48,15 +47,15 @@ function AboutPage() {
             <h3>Lorem Ipsum</h3>
             <p className="date">June 23, 2005</p>
             <p>
-              Fringilla urna porttitor rhoncus dolor purus non enim praesent
-              elementum. In tellus integer feugiat scelerisque varius morbi enim
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod. In tellus integer feugiat scelerisque varius morbi enim
               nunc. Suscipit tellus mauris a diam maecenas sed enim.
             </p>
           </div>
           <div className="our-history-item">
-          <h2>Avellino's History</h2>
+            <h2>Avellino's History</h2>
             <h3>Lorem Ipsum</h3>
-            <p className="date">June 23, 2005</p>
+            <p className="date">July 5, 2007</p>
             <p>
               Fringilla urna porttitor rhoncus dolor purus non enim praesent
               elementum. In tellus integer feugiat scelerisque varius morbi enim
@@ -64,19 +63,19 @@ function AboutPage() {
             </p>
           </div>
           <div className="our-history-item">
-          <h2>Avellino's History</h2>
+            <h2>Avellino's History</h2>
             <h3>Lorem Ipsum</h3>
-            <p className="date">June 23, 2005</p>
+            <p className="date">November 23, 2009</p>
             <p>
-              Fringilla urna porttitor rhoncus dolor purus non enim praesent
-              elementum. In tellus integer feugiat scelerisque varius morbi enim
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.In tellus integer feugiat scelerisque varius morbi enim
               nunc. Suscipit tellus mauris a diam maecenas sed enim.
             </p>
           </div>
           <div className="our-history-item">
-          <h2>Avellino's History</h2>
+            <h2>Avellino's History</h2>
             <h3>Lorem Ipsum</h3>
-            <p className="date">June 23, 2005</p>
+            <p className="date">January 5, 2012</p>
             <p>
               Fringilla urna porttitor rhoncus dolor purus non enim praesent
               elementum. In tellus integer feugiat scelerisque varius morbi enim
@@ -94,36 +93,36 @@ function AboutPage() {
         <title>About Avellino's - Avellino's Italian Cuisine</title>
         <meta name="description" content="Information about Avellino's" />
       </Helmet>
-    <Fade duration="1210">
-      <div className="about-page">
-        <PagesHero phimg={herobg} phheader="About Avellino's" />
-        <div className="about-page-left">
-          <div className="about-page-left-content">
-            <h2>About Avellino's</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Velit aliquet sagittis id consectetur purus ut faucibus pulvinar
-              elementum. Vulputate odio ut enim blandit volutpat maecenas. Quis
-              lectus nulla at volutpat diam ut. Quis blandit turpis cursus in
-              hac habitasse platea dictumst quisque. Sed id semper risus in
-              hendrerit gravida rutrum quisque non. Malesuada pellentesque elit
-              eget gravida cum sociis. Sit amet risus nullam eget felis eget
-              nunc.
-            </p>
+      <Fade duration="1210">
+        <div className="about-page">
+          <PagesHero phimg={herobg} phheader="About Avellino's" />
+          <div className="about-page-left">
+            <div className="about-page-left-content">
+              <h2>About Avellino's</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Velit aliquet sagittis id consectetur purus ut faucibus pulvinar
+                elementum. Vulputate odio ut enim blandit volutpat maecenas.
+                Quis lectus nulla at volutpat diam ut. Quis blandit turpis
+                cursus in hac habitasse platea dictumst quisque. Sed id semper
+                risus in hendrerit gravida rutrum quisque non. Malesuada
+                pellentesque elit eget gravida cum sociis. Sit amet risus nullam
+                eget felis eget nunc.
+              </p>
+            </div>
           </div>
+          {ParallaxContainer()}
+          <Chefs />
         </div>
-        {ParallaxContainer()}
-        <Chefs />
-      </div>
-    </Fade>
+      </Fade>
     </div>
   );
 }
