@@ -21,9 +21,11 @@
 }
   .about-page-left {
     display: flex;
+    flex-flow: column;
     .about-page-left-content {
       width: 100%;
       padding: 5vw;
+      text-align: center;
       h2 {
         color: #9e8746;
         font-size: 40px;
@@ -35,11 +37,7 @@
         color: #4d4d4d;
       }
     }
-    img {
-      width: 100%;
-      object-fit: cover;
-      max-height: 100vh;
-    }
+    
   }
   .our-history {
     width: 100%;
@@ -48,7 +46,7 @@
     .our-history-gradient {
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.618);
+      background: rgba(0, 0, 0, 0.67);
       position: absolute;
     }
     .our-history-item {

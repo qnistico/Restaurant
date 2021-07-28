@@ -31,7 +31,7 @@ function AboutPage() {
         <div className="our-history-gradient"></div>
         <Slider className="slide" {...settings}>
           <div className="our-history-item">
-            <h2>Our History</h2>
+            <h2>Avellino's History</h2>
             <h3>Our Beginning</h3>
             <p className="date">May 5, 2003</p>
             <p>
@@ -42,31 +42,43 @@ function AboutPage() {
             </p>
           </div>
           <div className="our-history-item">
-            <h3>We Opened in 2003</h3>
+            <h2>Avellino's History</h2>
+            <h3>Lorem Ipsum</h3>
+            <p className="date">June 23, 2005</p>
             <p>
-              Avellino's opened in 2003 when our family decided to pursue their
-              dream of sharing our authentic Italian cuisine with the world.
+              Fringilla urna porttitor rhoncus dolor purus non enim praesent
+              elementum. In tellus integer feugiat scelerisque varius morbi enim
+              nunc. Suscipit tellus mauris a diam maecenas sed enim.
             </p>
           </div>
           <div className="our-history-item">
-            <h3>We Opened in 2003</h3>
+          <h2>Avellino's History</h2>
+            <h3>Lorem Ipsum</h3>
+            <p className="date">June 23, 2005</p>
             <p>
-              Avellino's opened in 2003 when our family decided to pursue their
-              dream of sharing our authentic Italian cuisine with the world.
+              Fringilla urna porttitor rhoncus dolor purus non enim praesent
+              elementum. In tellus integer feugiat scelerisque varius morbi enim
+              nunc. Suscipit tellus mauris a diam maecenas sed enim.
             </p>
           </div>
           <div className="our-history-item">
-            <h3>We Opened in 2003</h3>
+          <h2>Avellino's History</h2>
+            <h3>Lorem Ipsum</h3>
+            <p className="date">June 23, 2005</p>
             <p>
-              Avellino's opened in 2003 when our family decided to pursue their
-              dream of sharing our authentic Italian cuisine with the world.
+              Fringilla urna porttitor rhoncus dolor purus non enim praesent
+              elementum. In tellus integer feugiat scelerisque varius morbi enim
+              nunc. Suscipit tellus mauris a diam maecenas sed enim.
             </p>
           </div>
           <div className="our-history-item">
-            <h3>We Opened in 2003</h3>
+          <h2>Avellino's History</h2>
+            <h3>Lorem Ipsum</h3>
+            <p className="date">June 23, 2005</p>
             <p>
-              Avellino's opened in 2003 when our family decided to pursue their
-              dream of sharing our authentic Italian cuisine with the world.
+              Fringilla urna porttitor rhoncus dolor purus non enim praesent
+              elementum. In tellus integer feugiat scelerisque varius morbi enim
+              nunc. Suscipit tellus mauris a diam maecenas sed enim.
             </p>
           </div>
         </Slider>
@@ -100,7 +112,6 @@ function AboutPage() {
               nunc.
             </p>
           </div>
-          <img src={aboutimg} alt="" />
         </div>
         {ParallaxContainer()}
         <Chefs />
