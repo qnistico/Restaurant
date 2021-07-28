@@ -577,7 +577,7 @@ function LPMenu(props) {
                 </p>
                 <p className="lp-menu-item-allergens">Caffeine</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$2.50</p>
               </div>
             </div>
           </div>
@@ -597,11 +597,11 @@ function LPMenu(props) {
                   Cappuccino
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Cappuccino with coffee and cream
                 </p>
-                <p className="lp-menu-item-allergens">Caffeine</p>
+                <p className="lp-menu-item-allergens">Caffeine | Dairy</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$3.00</p>
               </div>
             </div>
           </div>
@@ -621,11 +621,11 @@ function LPMenu(props) {
                   Espresso Single Shot
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Single shot of espresso
                 </p>
                 <p className="lp-menu-item-allergens">Caffeine</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$1.99</p>
               </div>
             </div>
           </div>
@@ -645,11 +645,11 @@ function LPMenu(props) {
                   Espresso Double Shot
                 </a>
                 <p className="lp-menu-item-ingredients">
-                  Wheat pasta, mushrooms, cream, oregeno and butter
+                  Double shot of espresso
                 </p>
                 <p className="lp-menu-item-allergens">Caffeine</p>
 
-                <p className="lp-menu-item-price">$23.00</p>
+                <p className="lp-menu-item-price">$2.99</p>
               </div>
             </div>
           </div>
