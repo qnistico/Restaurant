@@ -1,3 +1,7 @@
+.chef-profile {
+  overflow-x: hidden !important;
+}
+
 .chef-profile .chef-hero {
   width: 100%;
   height: 62vh;
@@ -62,25 +66,7 @@
   margin: 20px 0;
 }
 
-.chef-profile .chef-profile-flex .chef-left form .form-group-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
-}
-
-.chef-profile .chef-profile-flex .chef-left form .form-group-flex .ip1 {
-  margin-right: 15px;
-}
-
-.chef-profile .chef-profile-flex .chef-left form .form-group-flex .ip2 {
-  margin-left: 15px;
-}
-
-.chef-profile .chef-profile-flex .chef-left form .form-group-flex input {
+.chef-profile .chef-profile-flex .chef-left form input {
   width: 100%;
 }
 
@@ -89,6 +75,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .chef-profile .chef-profile-flex .chef-left form .form-group input {
@@ -97,11 +87,14 @@
   border: 1px solid #c5c5c5;
 }
 
+.chef-profile .chef-profile-flex .chef-left form .form-group label {
+  margin: 15px 0;
+}
+
 .chef-profile .chef-profile-flex .chef-left form .form-group textarea {
   width: 100%;
   height: 300px;
   padding: 10px;
-  margin-top: 30px;
   outline: none;
   border: 1px solid #c5c5c5;
 }
@@ -140,5 +133,72 @@
      object-fit: cover;
   border-radius: 100px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .chef-profile-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .chef-profile-flex .chef-left {
+    margin: auto;
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .chef-profile-flex .chef-sidebar {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0 !important;
+  }
+  .chef-profile-flex .chef-sidebar-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 40%;
+            flex: 1 40%;
+  }
+  .chef-profile-flex .ml-10 {
+    margin-left: 15px;
+    margin-bottom: 30px !important;
+  }
+  .chef-profile-flex .mr-10 {
+    margin-right: 15px;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chef-profile-flex {
+    padding: 60px 20px !important;
+  }
+  .chef-sidebar {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column !important;
+            flex-flow: column !important;
+    margin: 0 !important;
+  }
+  .chef-sidebar-item {
+    width: 100% !important;
+  }
+  .ml-10 {
+    margin-left: 0 !important;
+  }
+  .mr-10 {
+    margin-right: 0 !important;
+  }
+  .ip1, .ip2 {
+    margin-left: 0 !important;
+  }
 }
 /*# sourceMappingURL=ChefProfile.css.map */

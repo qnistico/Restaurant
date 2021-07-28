@@ -1,0 +1,91 @@
+.about-page {
+  width: 100%;
+  background-color: #f1f2f5;
+}
+
+.about-page .about-page-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-page .about-page-left .about-page-left-content {
+  width: 100%;
+  padding: 5vw;
+}
+
+.about-page .about-page-left .about-page-left-content h2 {
+  color: #9e8746;
+  font-size: 40px;
+  font-family: "Allura", sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-page .about-page-left .about-page-left-content p {
+  margin-bottom: 20px;
+  color: #4d4d4d;
+}
+
+.about-page .about-page-left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100vh;
+}
+
+.about-page .our-history {
+  width: 100%;
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-page .our-history .our-history-gradient {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.618);
+  position: absolute;
+}
+
+.about-page .our-history .our-history-item {
+  z-index: 99;
+  text-align: center;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.about-page .our-history .our-history-item h2 {
+  color: #e0bc75;
+  font-size: 40px;
+  font-family: 'Allura', sans-serif;
+}
+
+.about-page .our-history .our-history-item h3 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-page .our-history .our-history-item .date {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-page .our-history .our-history-item p {
+  color: #fff;
+}
+
+.slide {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*# sourceMappingURL=AboutPage.css.map */

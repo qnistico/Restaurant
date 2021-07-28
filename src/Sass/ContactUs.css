@@ -2,6 +2,7 @@
   width: 100%;
   padding: 60px 30px;
   background-color: #f1f2f5;
+  scroll-margin-top: 40px;
 }
 
 .contact-us hr {

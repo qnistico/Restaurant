@@ -3,7 +3,7 @@ import "./Sass/ContactUs.scss";
 
 function ContactUs() {
   return (
-    <div className="contact-us">
+    <div className="contact-us" id="contact-us">
       <div className="contact-us-flex">
         <div className="contact-left">
           <div className="contact-left-flex">

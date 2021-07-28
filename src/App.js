@@ -17,6 +17,7 @@ import ChefProfile from "./ChefProfile";
 import Gallery from "./Gallery";
 import SimpleReactLightbox from "simple-react-lightbox";
 import ContactPage from "./ContactPage";
+import AboutPage from "./AboutPage";
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
         <Switch>
           <Route exact path="/">
           <LandingPage />
+          </Route>
+          <Route exact path="/AboutPage">
+            <AboutPage />
           </Route>
           <Route exact path="/MenuItem">
             <MenuItem />

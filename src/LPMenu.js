@@ -109,7 +109,7 @@ function LPMenu(props) {
           className={`${
             !menuCategory || menuCategory == "pasta" ? "" : "menuItemHide"
           } menuItem pasta lp-menu-items-flex`}
-        >
+        > 
           <div
             className="lp-menu-item"
             onClick={() => history.push("/MenuItem?ID=1")}

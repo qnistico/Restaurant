@@ -27,7 +27,7 @@ function Nav() {
 
   function fixHeaderOnScoll() {
     const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-      fixOn = 100,
+      fixOn = 450,
       headerEl = document.getElementById("navbar");
 
     if (distanceY > fixOn) {
@@ -64,15 +64,9 @@ function Nav() {
                   </a>
               </li>
               <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/About"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
+                <a href="/AboutPage" className="nav-links">
                   About
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
                 <a href="/Gallery" className="nav-links">
@@ -98,7 +92,7 @@ function Nav() {
                   </a>
               </li>
               <li className="nav-item mobile_show">
-                <a className="nav-links reservations_mobile" href="/Reservations">
+                <a className="nav-links reservations_mobile" href="/#contact-us">
                   <RestaurantIcon />
                   Reservations
                 </a>
@@ -107,7 +101,7 @@ function Nav() {
             <ul className="nav-menu-2 mobile_hide">
               <li className="nav-item">
                 
-                    <a className="reservations" href="/Reservations">
+                    <a className="reservations" href="/#contact-us">
                       <RestaurantIcon />
                       Reservations
                     </a>

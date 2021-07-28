@@ -85,7 +85,7 @@ function ChefProfile(props) {
 
                 <div className="form-group">
                     
-              <label htmlFor="name"></label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 name="name"
@@ -96,7 +96,7 @@ function ChefProfile(props) {
               />
               </div>
                 <div className="form-group">
-              <label htmlFor="phone"></label>
+              <label htmlFor="phone">Phone</label>
               <input
                 type="number"
                 name="phone"
@@ -108,7 +108,7 @@ function ChefProfile(props) {
               </div>
               </div>
                 <div className="form-group">
-              <label htmlFor="message"></label>
+              <label htmlFor="message">Your Message</label>
               <textarea
                 type="text"
                 name="message"
@@ -121,7 +121,7 @@ function ChefProfile(props) {
           </div>
         </div>
         <div className="chef-sidebar">
-          <div className="chef-sidebar-item">
+          <div className="chef-sidebar-item mr-10">
             <div className="chef-sidebar-profile">
                 <a href="/ChefProfile?ID=1">
               <img
@@ -132,7 +132,7 @@ function ChefProfile(props) {
               <p>Chef</p>
             </div>
           </div>
-          <div className="chef-sidebar-item">
+          <div className="chef-sidebar-item ml-10">
             <div className="chef-sidebar-profile">
                 <a href="/ChefProfile?ID=2">
               <img

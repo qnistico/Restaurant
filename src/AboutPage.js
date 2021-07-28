@@ -1,0 +1,102 @@
+import React from "react";
+import PagesHero from "./PagesHero";
+import aboutimg from "./img/aboutimg.jpg";
+import "./Sass/AboutPage.scss";
+import herobg from "./img/herobg.jpg";
+import Slider from "react-slick";
+import Chefs from "./Chefs";
+import { Parallax } from "react-parallax";
+import aboutslideimg from "./img/aboutslideimg.jpg";
+import { Fade } from "react-reveal";
+
+function AboutPage() {
+    var settings = {
+        accessibility: true,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 618,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+      };
+  const ParallaxContainer = () => (
+    <Parallax
+      bgImage={aboutslideimg}
+      bgImageAlt="people eating in a restaurant"
+      strength={300}
+    >
+<div className="our-history">
+    <div className="our-history-gradient"></div>
+        <Slider className="slide">
+          <div className="our-history-item">
+              <h2>Our History</h2>
+            <h3>Our Beginning</h3>
+            <p className="date">May 5, 2003</p>
+            <p>
+              Avellino's opened in 2003 when our family decided to pursue their
+              dream of sharing our authentic Italian cuisine with the world.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="our-history-item">
+            <h3>We Opened in 2003</h3>
+            <p>
+              Avellino's opened in 2003 when our family decided to pursue their
+              dream of sharing our authentic Italian cuisine with the world.
+            </p>
+          </div>
+          <div className="our-history-item">
+            <h3>We Opened in 2003</h3>
+            <p>
+              Avellino's opened in 2003 when our family decided to pursue their
+              dream of sharing our authentic Italian cuisine with the world.
+            </p>
+          </div>
+          <div className="our-history-item">
+            <h3>We Opened in 2003</h3>
+            <p>
+              Avellino's opened in 2003 when our family decided to pursue their
+              dream of sharing our authentic Italian cuisine with the world.
+            </p>
+          </div>
+          <div className="our-history-item">
+            <h3>We Opened in 2003</h3>
+            <p>
+              Avellino's opened in 2003 when our family decided to pursue their
+              dream of sharing our authentic Italian cuisine with the world.
+            </p>
+          </div>
+        </Slider>
+      </div>
+    </Parallax>
+  );
+  
+  return (
+      <Fade duration="1210">
+    <div className="about-page">
+      <PagesHero phimg={herobg} phheader="About Avellino's" />
+      <div className="about-page-left">
+        <div className="about-page-left-content">
+          <h2>About Avellino's</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <img src={aboutimg} alt="" />
+      </div>
+      {ParallaxContainer()}
+      <Chefs />
+    </div>
+    </Fade>
+  );
+}
+
+export default AboutPage;

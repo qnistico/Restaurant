@@ -1,0 +1,74 @@
+.about-page {
+  width: 100%;
+  background-color: #f1f2f5;
+  .about-page-left {
+    display: flex;
+    .about-page-left-content {
+      width: 100%;
+      padding: 5vw;
+      h2 {
+        color: #9e8746;
+        font-size: 40px;
+        font-family: "Allura", sans-serif;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 20px;
+        color: #4d4d4d;
+      }
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 100vh;
+    }
+  }
+  .our-history {
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    .our-history-gradient {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.618);
+      position: absolute;
+    }
+    .our-history-item {
+      z-index: 99;
+      text-align: center;
+      position: relative;
+      cursor: grab;
+      h2 {
+        color: #e0bc75;
+        font-size: 40px;
+        font-family: 'Allura', sans-serif;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .date {
+          font-size: 24px;
+          margin-bottom: 20px;
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.slide {
+  max-width: 1000px;
+  margin: auto;
+  
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 40px;
+    transition: all 0.5s ease;
+}
+
