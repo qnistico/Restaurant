@@ -4,9 +4,15 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Parallax1 from "./Parallax1";
 import PagesHero from "./PagesHero";
 import contactbg from "./img/contactbg.jpg";
+import { Helmet } from "react-helmet";
 function ContactPage(props) {
     
   return (
+    <div>
+      <Helmet>
+        <title>Contact Us - Avellino's Italian Cuisine</title>
+        <meta name="description" content="Contact Avellino's Italian Cuisine" />  
+      </Helmet>
     <div className="contact-page">
         <PagesHero phimg={contactbg} phheader="Contact Us" />
         <div className="contact-page-content">
@@ -64,6 +70,7 @@ function ContactPage(props) {
               <button className="send-button">Send</button>
       </form>
       </div>
+    </div>
     </div>
   );
 }
