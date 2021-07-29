@@ -19,7 +19,7 @@ function Hero(props) {
     <Parallax bgImage={herobg} bgImageAlt="restaurant" strength={300}>
       <div className="hero">
         <div className="hero-content">
-          <h1>Authentic Italian Cuisine</h1>
+          <h1>Avellino's Italian Cuisine</h1>
           <p>Italian cuisine cooked to perfection</p>
           <a href="/MenuPage"><button className="hero-button">View Menu</button></a>
         </div>

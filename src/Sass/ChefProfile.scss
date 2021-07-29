@@ -85,17 +85,28 @@
         box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.158);
         border: 1px solid #d9d9d9;
         margin-bottom: 20px;
+        .stars {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          margin: 10px auto 0 auto;
+          .MuiSvgIcon-root {
+            color: #ff9529;
+          }
+        }
 
         .chef-sidebar-profile {
           display: flex;
+          flex-flow: column;
           align-items: center;
         }
         .chef-sidebar-profile:last-of-type {
           margin-bottom: 0;
         }
         img {
-          width: 125px;
-          height: 125px;
+          width: 140px;
+          height: 140px;
           object-fit: cover;
           border-radius: 100px;
           cursor: pointer;

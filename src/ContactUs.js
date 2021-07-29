@@ -8,7 +8,7 @@ function ContactUs() {
     <div>
       <Helmet>
         <title>Contact Us - Avellino's Italian Cuisine</title>
-        <meta name="description" content="Contact Avellino's Italian Cuisine" />
+        <meta name="description" content="Contact Avellino's Italian Cuisine" />  
       </Helmet>
     <div className="contact-us" id="contact-us">
       <div className="contact-us-flex">
