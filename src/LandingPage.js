@@ -10,24 +10,24 @@ import LPMenu from "./LPMenu";
 import ScrollToTop from "./ScrollToTop";
 import { Helmet } from "react-helmet";
 
-
-
 function LandingPage(props) {
-  
   const [menuCategory, setMenuCategory] = useState(false);
 
   return (
-    <div className="landing-page">
+    <div>
       <Helmet>
         <title>Avellino's Italian Cuisine</title>
         <meta
           name="description"
           content="Avellino's Italian Cuisine.  Delicious italian food restaurant."
         />
-        <meta 
-        name="keywords" 
-        content="Restaurant, food, Italian Food, Restaurant Near Me, Gourmet Food" />
+        <meta
+          name="keywords"
+          content="Restaurant, food, Italian Food, Restaurant Near Me, Gourmet Food"
+        />
       </Helmet>
+    <div className="landing-page">
+      
       <ScrollToTop />
       <Hero />
       <About />
@@ -37,6 +37,7 @@ function LandingPage(props) {
       <CoffeeOverlay setMenuCategory={setMenuCategory} />
       <ContactUs />
       <CustomerReviews />
+    </div>
     </div>
   );
 }
