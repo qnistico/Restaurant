@@ -55,10 +55,10 @@ function Footer(props) {
                 <a href="/Gallery">Gallery</a>
               </li>
               <li>
-                <a href="/#Chefs">Chefs</a>
+                <a href="/#chefs">Chefs</a>
               </li>
               <li>
-                <a href="/ContactUs">Contact Us</a>
+                <a href="/ContactPage">Contact Us</a>
               </li>
             </ul>
           </div>
